@@ -1,14 +1,6 @@
 // OpenAI API Configuration
-// IMPORTANT: Enter your API key when prompted - never commit it to git
-let OPENAI_API_KEY = localStorage.getItem('openai_api_key') || '';
+const OPENAI_API_KEY = 'Yur_API_Key_Here';
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
-
-// Function to set API key (call this from browser console or add a UI input)
-function setApiKey(key) {
-    OPENAI_API_KEY = key;
-    localStorage.setItem('openai_api_key', key);
-    console.log('API key saved to localStorage');
-}
 
 // Pre-configured Prompts for Resume Analysis
 const PROMPTS = [
@@ -73,7 +65,13 @@ Extract the following information and return it in a structured JSON format:
 1. **education**: Array of education entries, each containing:
    - degree: Degree name (e.g., "Bachelor of Science in Computer Science")
    - institution: University/College name
-   - graduation_year: Year of graduation
+   - graduation_year: Year of graduation (IMPORTANT: If only entry year is given, CALCULATE the graduation year based on standard degree durations:
+     * B.Tech/B.E./Bachelor's = 4 years
+     * M.Tech/M.S./Master's = 2 years
+     * PhD = 4-5 years
+     * Diploma = 3 years
+     * 12th/High School = 2 years
+     For example: "2022 – Present" for B.Tech means graduation_year = 2026)
    - gpa: GPA if mentioned
 
 2. **experience_by_domain**: Object mapping each skill/domain to experience duration:
