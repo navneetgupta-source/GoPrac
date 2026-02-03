@@ -1,5 +1,5 @@
 // OpenAI API Configuration
-const OPENAI_API_KEY = 'Yur_API_Key_Here';
+const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY_HERE';
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
 
 // Pre-configured Prompts for Resume Analysis
@@ -165,6 +165,8 @@ Return ONLY valid JSON in this format:
 let history = JSON.parse(localStorage.getItem('promptHistory') || '[]');
 let currentPrompt = null;
 let workflowData = {};
+let customWorkflows = JSON.parse(localStorage.getItem('customWorkflows') || '[]');
+let currentWorkflow = null;
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
@@ -177,7 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setupPlayground();
     setupWorkflow();
     setupHistory();
+    setupWorkflowModal();
     renderHistory();
+    renderWorkflowOptions();
 });
 
 // Tab navigation
@@ -283,7 +287,16 @@ function setupPlayground() {
     document.getElementById('clearBtn').addEventListener('click', () => {
         systemPrompt.value = '';
         userInput.value = '';
-        outputBox.textContent = 'Run a prompt to see results';
+        outputBox.innerHTML = `
+            <div class="output-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8 12h8"/>
+                    <path d="M12 8v8"/>
+                </svg>
+                <span>Run a prompt to see AI-generated results</span>
+            </div>
+        `;
         document.getElementById('outputStats').textContent = '';
         document.getElementById('promptSelect').value = '';
         document.getElementById('fileName').textContent = '';
@@ -300,7 +313,7 @@ function setupPlayground() {
     // Save button
     document.getElementById('saveBtn').addEventListener('click', () => {
         const out = outputBox.textContent;
-        if (!out || out === 'Run a prompt to see results') { toast('Nothing to save', true); return; }
+        if (!out || out.includes('Run a prompt to see')) { toast('Nothing to save', true); return; }
         
         history.unshift({
             id: Date.now(),
@@ -319,11 +332,15 @@ function setupPlayground() {
 // Workflow setup
 function setupWorkflow() {
     const resumeInput = document.getElementById('workflowResume');
+    const saveJsonBtn = document.getElementById('saveWorkflowJsonBtn');
     
     // File upload for workflow
     document.getElementById('workflowFile').addEventListener('change', async (e) => {
         const file = e.target.files[0];
         if (!file) return;
+        
+        const fileNameSpan = document.getElementById('workflowFileName');
+        if (fileNameSpan) fileNameSpan.textContent = file.name;
         
         if (file.type === 'application/pdf') {
             showLoader(true);
@@ -346,46 +363,171 @@ function setupWorkflow() {
         }
     });
     
+    // Workflow selector change
+    document.getElementById('workflowSelect').addEventListener('change', (e) => {
+        const workflowId = e.target.value;
+        if (workflowId === 'resume-analysis') {
+            currentWorkflow = null;
+            renderDefaultWorkflowSteps();
+        } else {
+            currentWorkflow = customWorkflows.find(w => w.id === workflowId);
+            if (currentWorkflow) {
+                renderCustomWorkflowSteps(currentWorkflow);
+            }
+        }
+        // Reset save button
+        saveJsonBtn.disabled = true;
+        workflowData = {};
+    });
+    
     // Run workflow button
     document.getElementById('runWorkflowBtn').addEventListener('click', async () => {
         const resume = resumeInput.value.trim();
-        if (!resume) { toast('Paste a resume first', true); return; }
+        if (!resume) { toast('Paste input first', true); return; }
         
         workflowData = {};
-        resetSteps();
+        const workflowSelect = document.getElementById('workflowSelect');
+        const isDefault = workflowSelect.value === 'resume-analysis';
         
-        try {
-            // Step 1: Extract Basic Data
-            await runStep(1, PROMPTS[0], resume);
-            
-            // Step 2: Extract Education & Background
-            await runStep(2, PROMPTS[1], resume);
-            
-            // Step 3: Generate Interview Questions
-            const context = `CANDIDATE BASIC INFO:\n${workflowData.s1}\n\nEDUCATION & BACKGROUND:\n${workflowData.s2}`;
-            await runStep(3, PROMPTS[2], context);
-            
-            toast('Workflow done');
-            
-            // Save to history
-            history.unshift({
-                id: Date.now(),
-                time: new Date().toISOString(),
-                name: 'Full Workflow',
-                system: 'Multi-step workflow',
-                user: resume.substring(0, 200),
-                output: JSON.stringify({ basic: workflowData.s1, education: workflowData.s2, questions: workflowData.s3 })
-            });
-            localStorage.setItem('promptHistory', JSON.stringify(history));
-            renderHistory();
-            
-        } catch (err) {
-            toast('Workflow failed: ' + err.message, true);
+        if (isDefault) {
+            await runDefaultWorkflow(resume);
+        } else if (currentWorkflow) {
+            await runCustomWorkflow(resume, currentWorkflow);
         }
+    });
+    
+    // Save workflow as JSON button
+    saveJsonBtn.addEventListener('click', () => {
+        if (Object.keys(workflowData).length === 0) {
+            toast('No workflow results to save', true);
+            return;
+        }
+        
+        const workflowSelect = document.getElementById('workflowSelect');
+        const workflowName = workflowSelect.options[workflowSelect.selectedIndex].text.replace(/^[^\s]+\s/, '');
+        
+        const exportData = {
+            workflow: workflowName,
+            timestamp: new Date().toISOString(),
+            results: workflowData
+        };
+        
+        const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `workflow-${Date.now()}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        toast('Workflow saved as JSON');
     });
 }
 
-// Run a single workflow step
+// Run default resume analysis workflow
+async function runDefaultWorkflow(resume) {
+    resetSteps();
+    const saveJsonBtn = document.getElementById('saveWorkflowJsonBtn');
+    
+    try {
+        // Step 1: Extract Basic Data
+        await runStep(1, PROMPTS[0], resume);
+        
+        // Step 2: Extract Education & Background
+        await runStep(2, PROMPTS[1], resume);
+        
+        // Step 3: Generate Interview Questions
+        const context = `CANDIDATE BASIC INFO:\n${workflowData.s1}\n\nEDUCATION & BACKGROUND:\n${workflowData.s2}`;
+        await runStep(3, PROMPTS[2], context);
+        
+        toast('Workflow done');
+        saveJsonBtn.disabled = false;
+        
+        // Save to history
+        history.unshift({
+            id: Date.now(),
+            time: new Date().toISOString(),
+            name: 'Full Workflow',
+            system: 'Multi-step workflow',
+            user: resume.substring(0, 200),
+            output: JSON.stringify({ basic: workflowData.s1, education: workflowData.s2, questions: workflowData.s3 })
+        });
+        localStorage.setItem('promptHistory', JSON.stringify(history));
+        renderHistory();
+        
+    } catch (err) {
+        toast('Workflow failed: ' + err.message, true);
+    }
+}
+
+// Run custom workflow
+async function runCustomWorkflow(input, workflow) {
+    resetCustomSteps(workflow.steps.length);
+    const saveJsonBtn = document.getElementById('saveWorkflowJsonBtn');
+    
+    try {
+        let previousOutput = input;
+        
+        for (let i = 0; i < workflow.steps.length; i++) {
+            const step = workflow.steps[i];
+            const stepNum = i + 1;
+            const stepInput = step.usePrevOutput && i > 0 
+                ? `Previous step output:\n${previousOutput}\n\nOriginal input:\n${input}`
+                : input;
+            
+            await runCustomStep(stepNum, step, stepInput);
+            previousOutput = workflowData[`s${stepNum}`];
+        }
+        
+        toast('Workflow done');
+        saveJsonBtn.disabled = false;
+        
+        // Save to history
+        history.unshift({
+            id: Date.now(),
+            time: new Date().toISOString(),
+            name: workflow.name,
+            system: 'Custom workflow',
+            user: input.substring(0, 200),
+            output: JSON.stringify(workflowData)
+        });
+        localStorage.setItem('promptHistory', JSON.stringify(history));
+        renderHistory();
+        
+    } catch (err) {
+        toast('Workflow failed: ' + err.message, true);
+    }
+}
+
+// Run a single custom workflow step
+async function runCustomStep(n, stepConfig, input) {
+    const step = document.querySelector(`.step[data-step="${n}"]`);
+    const status = document.getElementById(`s${n}status`);
+    const result = document.getElementById(`s${n}result`);
+    
+    step.classList.add('running');
+    step.classList.remove('done', 'error');
+    status.innerHTML = '<span class="status-dot"></span> Running...';
+    
+    try {
+        const res = await callAPI(stepConfig.prompt, input);
+        workflowData[`s${n}`] = res.content;
+        step.classList.remove('running');
+        step.classList.add('done');
+        status.innerHTML = '<span class="status-dot"></span> Done';
+        result.innerHTML = formatJSON(res.content);
+    } catch (err) {
+        step.classList.remove('running');
+        step.classList.add('error');
+        status.innerHTML = '<span class="status-dot"></span> Failed';
+        result.textContent = err.message;
+        throw err;
+    }
+}
+
+// Run a single workflow step (default workflow)
 async function runStep(n, prompt, input) {
     const step = document.querySelector(`.step[data-step="${n}"]`);
     const status = document.getElementById(`s${n}status`);
@@ -393,19 +535,19 @@ async function runStep(n, prompt, input) {
     
     step.classList.add('running');
     step.classList.remove('done', 'error');
-    status.textContent = 'running...';
+    status.innerHTML = '<span class="status-dot"></span> Running...';
     
     try {
         const res = await callAPI(prompt.systemPrompt, prompt.userPromptPrefix + input);
         workflowData[`s${n}`] = res.content;
         step.classList.remove('running');
         step.classList.add('done');
-        status.textContent = 'done';
+        status.innerHTML = '<span class="status-dot"></span> Done';
         result.innerHTML = formatJSON(res.content);
     } catch (err) {
         step.classList.remove('running');
         step.classList.add('error');
-        status.textContent = 'failed';
+        status.innerHTML = '<span class="status-dot"></span> Failed';
         result.textContent = err.message;
         throw err;
     }
@@ -415,10 +557,301 @@ async function runStep(n, prompt, input) {
 function resetSteps() {
     for (let i = 1; i <= 3; i++) {
         const step = document.querySelector(`.step[data-step="${i}"]`);
-        step.classList.remove('running', 'done', 'error');
-        document.getElementById(`s${i}status`).textContent = 'waiting';
-        document.getElementById(`s${i}result`).textContent = '...';
+        if (step) {
+            step.classList.remove('running', 'done', 'error');
+            const status = document.getElementById(`s${i}status`);
+            const result = document.getElementById(`s${i}result`);
+            if (status) status.innerHTML = '<span class="status-dot"></span> Waiting to start';
+            if (result) result.textContent = '...';
+        }
     }
+}
+
+// Reset custom workflow steps
+function resetCustomSteps(count) {
+    for (let i = 1; i <= count; i++) {
+        const step = document.querySelector(`.step[data-step="${i}"]`);
+        if (step) {
+            step.classList.remove('running', 'done', 'error');
+            const status = document.getElementById(`s${i}status`);
+            const result = document.getElementById(`s${i}result`);
+            if (status) status.innerHTML = '<span class="status-dot"></span> Waiting to start';
+            if (result) result.textContent = '...';
+        }
+    }
+}
+
+// Render default workflow steps
+function renderDefaultWorkflowSteps() {
+    const stepsContainer = document.querySelector('#workflows .steps');
+    stepsContainer.innerHTML = `
+        <div class="step" data-step="1">
+            <div class="step-indicator">
+                <div class="step-number">1</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+                <div class="step-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    Basic Information
+                </div>
+                <div class="step-status" id="s1status">
+                    <span class="status-dot"></span>
+                    Waiting to start
+                </div>
+                <pre class="step-result" id="s1result">Extract name, location, contact details, and professional domain...</pre>
+            </div>
+        </div>
+        <div class="step" data-step="2">
+            <div class="step-indicator">
+                <div class="step-number">2</div>
+                <div class="step-line"></div>
+            </div>
+            <div class="step-content">
+                <div class="step-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                    Education & Experience
+                </div>
+                <div class="step-status" id="s2status">
+                    <span class="status-dot"></span>
+                    Waiting to start
+                </div>
+                <pre class="step-result" id="s2result">Extract degrees, skills, certifications, and work experience...</pre>
+            </div>
+        </div>
+        <div class="step" data-step="3">
+            <div class="step-indicator">
+                <div class="step-number">3</div>
+            </div>
+            <div class="step-content">
+                <div class="step-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    Interview Questions
+                </div>
+                <div class="step-status" id="s3status">
+                    <span class="status-dot"></span>
+                    Waiting to start
+                </div>
+                <pre class="step-result" id="s3result">Generate 10 personalized interview questions based on the candidate profile...</pre>
+            </div>
+        </div>
+    `;
+}
+
+// Render custom workflow steps
+function renderCustomWorkflowSteps(workflow) {
+    const stepsContainer = document.querySelector('#workflows .steps');
+    stepsContainer.innerHTML = workflow.steps.map((step, index) => {
+        const isLast = index === workflow.steps.length - 1;
+        return `
+            <div class="step" data-step="${index + 1}">
+                <div class="step-indicator">
+                    <div class="step-number">${index + 1}</div>
+                    ${!isLast ? '<div class="step-line"></div>' : ''}
+                </div>
+                <div class="step-content">
+                    <div class="step-title">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="9" y1="9" x2="15" y2="9"/>
+                            <line x1="9" y1="13" x2="15" y2="13"/>
+                            <line x1="9" y1="17" x2="13" y2="17"/>
+                        </svg>
+                        ${step.name}
+                    </div>
+                    <div class="step-status" id="s${index + 1}status">
+                        <span class="status-dot"></span>
+                        Waiting to start
+                    </div>
+                    <pre class="step-result" id="s${index + 1}result">${step.prompt.substring(0, 80)}...</pre>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// Render workflow options in selector
+function renderWorkflowOptions() {
+    const select = document.getElementById('workflowSelect');
+    // Keep the default option and add custom workflows
+    let options = '<option value="resume-analysis" selected>📋 Resume Analysis Pipeline</option>';
+    
+    customWorkflows.forEach(w => {
+        options += `<option value="${w.id}">🔧 ${w.name}</option>`;
+    });
+    
+    select.innerHTML = options;
+}
+
+// Setup workflow modal
+function setupWorkflowModal() {
+    const modal = document.getElementById('workflowModal');
+    const createBtn = document.getElementById('createWorkflowBtn');
+    const closeBtn = document.getElementById('closeWorkflowModal');
+    const cancelBtn = document.getElementById('cancelWorkflowBtn');
+    const saveBtn = document.getElementById('saveNewWorkflowBtn');
+    const addStepBtn = document.getElementById('addStepBtn');
+    
+    // Open modal
+    createBtn.addEventListener('click', () => {
+        modal.classList.add('show');
+        resetWorkflowModal();
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+    cancelBtn.addEventListener('click', () => modal.classList.remove('show'));
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('show');
+    });
+    
+    // Add step
+    addStepBtn.addEventListener('click', () => {
+        const stepsList = document.getElementById('stepsBuilder');
+        const stepCount = stepsList.querySelectorAll('.step-builder-item').length + 1;
+        
+        const stepHtml = `
+            <div class="step-builder-item" data-step="${stepCount}">
+                <div class="step-builder-header">
+                    <span class="step-badge">Step ${stepCount}</span>
+                    <button type="button" class="remove-step-btn" title="Remove step">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+                <input type="text" class="step-name-input" placeholder="Step name (e.g., Extract Skills)">
+                <textarea class="step-prompt-input" placeholder="System prompt for this step..."></textarea>
+                <div class="step-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="use-prev-output" checked>
+                        <span>Include previous step output as context</span>
+                    </label>
+                </div>
+            </div>
+        `;
+        
+        stepsList.insertAdjacentHTML('beforeend', stepHtml);
+        attachRemoveStepHandler(stepsList.lastElementChild);
+    });
+    
+    // Save workflow
+    saveBtn.addEventListener('click', () => {
+        const name = document.getElementById('newWorkflowName').value.trim();
+        const desc = document.getElementById('newWorkflowDesc').value.trim();
+        
+        if (!name) {
+            toast('Enter a workflow name', true);
+            return;
+        }
+        
+        const steps = [];
+        const stepItems = document.querySelectorAll('.step-builder-item');
+        
+        for (const item of stepItems) {
+            const stepName = item.querySelector('.step-name-input').value.trim();
+            const stepPrompt = item.querySelector('.step-prompt-input').value.trim();
+            const usePrev = item.querySelector('.use-prev-output').checked;
+            
+            if (!stepName || !stepPrompt) {
+                toast('Fill in all step details', true);
+                return;
+            }
+            
+            steps.push({
+                name: stepName,
+                prompt: stepPrompt,
+                usePrevOutput: usePrev
+            });
+        }
+        
+        if (steps.length === 0) {
+            toast('Add at least one step', true);
+            return;
+        }
+        
+        const newWorkflow = {
+            id: 'workflow-' + Date.now(),
+            name: name,
+            description: desc,
+            steps: steps,
+            createdAt: new Date().toISOString()
+        };
+        
+        customWorkflows.push(newWorkflow);
+        localStorage.setItem('customWorkflows', JSON.stringify(customWorkflows));
+        
+        renderWorkflowOptions();
+        document.getElementById('workflowSelect').value = newWorkflow.id;
+        currentWorkflow = newWorkflow;
+        renderCustomWorkflowSteps(newWorkflow);
+        
+        modal.classList.remove('show');
+        toast('Workflow created');
+    });
+    
+    // Attach remove handlers to existing steps
+    document.querySelectorAll('.step-builder-item').forEach(attachRemoveStepHandler);
+}
+
+// Attach remove step handler
+function attachRemoveStepHandler(stepItem) {
+    const removeBtn = stepItem.querySelector('.remove-step-btn');
+    removeBtn.addEventListener('click', () => {
+        const stepsList = document.getElementById('stepsBuilder');
+        if (stepsList.querySelectorAll('.step-builder-item').length > 1) {
+            stepItem.remove();
+            // Renumber remaining steps
+            stepsList.querySelectorAll('.step-builder-item').forEach((item, index) => {
+                item.dataset.step = index + 1;
+                item.querySelector('.step-badge').textContent = `Step ${index + 1}`;
+            });
+        } else {
+            toast('Need at least one step', true);
+        }
+    });
+}
+
+// Reset workflow modal
+function resetWorkflowModal() {
+    document.getElementById('newWorkflowName').value = '';
+    document.getElementById('newWorkflowDesc').value = '';
+    
+    const stepsList = document.getElementById('stepsBuilder');
+    stepsList.innerHTML = `
+        <div class="step-builder-item" data-step="1">
+            <div class="step-builder-header">
+                <span class="step-badge">Step 1</span>
+                <button type="button" class="remove-step-btn" title="Remove step">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <input type="text" class="step-name-input" placeholder="Step name (e.g., Extract Skills)">
+            <textarea class="step-prompt-input" placeholder="System prompt for this step..."></textarea>
+            <div class="step-options">
+                <label class="checkbox-label">
+                    <input type="checkbox" class="use-prev-output" checked>
+                    <span>Include previous step output as context</span>
+                </label>
+            </div>
+        </div>
+    `;
+    
+    attachRemoveStepHandler(stepsList.querySelector('.step-builder-item'));
 }
 
 // History setup
@@ -437,7 +870,16 @@ function setupHistory() {
 function renderHistory() {
     const list = document.getElementById('historyList');
     if (history.length === 0) {
-        list.innerHTML = '<p class="empty">No history yet</p>';
+        list.innerHTML = `
+            <div class="empty-state">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <p>No history yet</p>
+                <span>Your prompt history will appear here</span>
+            </div>
+        `;
         return;
     }
     
@@ -628,7 +1070,12 @@ function showLoader(show) {
 // Toast notification
 function toast(msg, isError) {
     const t = document.getElementById('toast');
-    t.textContent = msg;
+    const messageEl = t.querySelector('.toast-message');
+    if (messageEl) {
+        messageEl.textContent = msg;
+    } else {
+        t.textContent = msg;
+    }
     t.className = 'toast show' + (isError ? ' error' : '');
     setTimeout(() => t.classList.remove('show'), 2500);
 }

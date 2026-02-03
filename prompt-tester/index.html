@@ -3,38 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoPrac</title>
+    <title>GoPrac - AI Resume Analyzer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
         <header class="topbar">
-            <div class="brand">GoPrac</div>
+            <div class="brand">
+                <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+                <span>GoPrac</span>
+            </div>
             <nav class="tabs">
-                <button class="tab active" data-tab="playground">Playground</button>
-                <button class="tab" data-tab="workflows">Workflows</button>
-                <button class="tab" data-tab="history">History</button>
+                <button class="tab active" data-tab="playground">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                    Playground
+                </button>
+                <button class="tab" data-tab="workflows">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    Workflows
+                </button>
+                <button class="tab" data-tab="history">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    History
+                </button>
             </nav>
             <div class="settings-toggle">
-                <button id="settingsBtn">Settings ▾</button>
+                <button id="settingsBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                    </svg>
+                    <span>Settings</span>
+                    <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                </button>
                 <div class="settings-dropdown" id="settingsDropdown">
-                    <label>Model
+                    <div class="settings-title">Model Configuration</div>
+                    <div class="setting-group">
+                        <label>Model</label>
                         <select id="modelSelect">
-                            <option value="gpt-4o-mini" selected>gpt-4o-mini</option>
-                            <option value="gpt-4o">gpt-4o</option>
-                            <option value="gpt-4-turbo">gpt-4-turbo</option>
-                            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                            <option value="gpt-4o-mini" selected>GPT-4o Mini</option>
+                            <option value="gpt-4o">GPT-4o</option>
+                            <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
                         </select>
-                    </label>
-                    <label>Temperature <span id="tempVal">0.7</span>
+                    </div>
+                    <div class="setting-group">
+                        <label>Temperature <span class="setting-value" id="tempVal">0.7</span></label>
                         <input type="range" id="temperature" min="0" max="2" step="0.1" value="0.7">
-                    </label>
-                    <label>Max Tokens
+                        <div class="range-labels"><span>Precise</span><span>Creative</span></div>
+                    </div>
+                    <div class="setting-group">
+                        <label>Max Tokens</label>
                         <input type="number" id="maxTokens" value="4096">
-                    </label>
-                    <label>Top P <span id="topPVal">1</span>
+                    </div>
+                    <div class="setting-group">
+                        <label>Top P <span class="setting-value" id="topPVal">1</span></label>
                         <input type="range" id="topP" min="0" max="1" step="0.1" value="1">
-                    </label>
+                    </div>
                 </div>
             </div>
         </header>
@@ -42,76 +83,249 @@
         <main class="content">
             <!-- Playground -->
             <section class="panel active" id="playground">
-                <div class="prompt-picker">
-                    <span>Load prompt:</span>
-                    <select id="promptSelect">
-                        <option value="">-- select --</option>
-                        <option value="extract-basic">Extract Basic Info</option>
-                        <option value="extract-education">Extract Education</option>
-                        <option value="generate-questions">Generate Questions</option>
-                    </select>
+                <div class="panel-header">
+                    <div class="prompt-picker">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                        <span>Load Template:</span>
+                        <select id="promptSelect">
+                            <option value="">Select a prompt template...</option>
+                            <option value="extract-basic">📋 Extract Basic Info</option>
+                            <option value="extract-education">🎓 Extract Education</option>
+                            <option value="generate-questions">❓ Generate Questions</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="editor-area">
                     <div class="editor-col">
-                        <label>System Prompt</label>
-                        <textarea id="systemPrompt" placeholder="Instructions for the AI..."></textarea>
+                        <div class="editor-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="9"/>
+                                <line x1="9" y1="13" x2="15" y2="13"/>
+                                <line x1="9" y1="17" x2="13" y2="17"/>
+                            </svg>
+                            System Prompt
+                        </div>
+                        <textarea id="systemPrompt" placeholder="Define how the AI should behave and what task it should perform..."></textarea>
                     </div>
+                    <div class="editor-divider"></div>
                     <div class="editor-col">
-                        <label>User Input</label>
-                        <textarea id="userInput" placeholder="Paste resume or type here..."></textarea>
+                        <div class="editor-label">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            User Input
+                        </div>
+                        <textarea id="userInput" placeholder="Paste your resume text here or upload a file..."></textarea>
                         <div class="file-row">
-                            <input type="file" id="pdfUpload" accept=".pdf,.txt">
-                            <span id="fileName"></span>
+                            <label class="file-upload-btn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                Upload File
+                                <input type="file" id="pdfUpload" accept=".pdf,.txt">
+                            </label>
+                            <span id="fileName" class="file-name"></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="actions">
-                    <button id="runBtn" class="primary">Run</button>
-                    <button id="clearBtn">Clear</button>
+                    <button id="runBtn" class="btn-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        Run Prompt
+                    </button>
+                    <button id="clearBtn" class="btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"/>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                        </svg>
+                        Clear
+                    </button>
                 </div>
 
                 <div class="output-area">
                     <div class="output-header">
-                        <label>Output</label>
-                        <div>
-                            <button id="copyBtn" title="Copy">Copy</button>
-                            <button id="saveBtn" title="Save">Save</button>
+                        <div class="output-title">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="4 17 10 11 4 5"/>
+                                <line x1="12" y1="19" x2="20" y2="19"/>
+                            </svg>
+                            Output
+                        </div>
+                        <div class="output-actions">
+                            <button id="copyBtn" class="icon-btn" title="Copy to clipboard">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                            </button>
+                            <button id="saveBtn" class="icon-btn" title="Save as file">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                    <polyline points="17 21 17 13 7 13 7 21"/>
+                                    <polyline points="7 3 7 8 15 8"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                    <div class="output-box" id="outputBox">Run a prompt to see results</div>
+                    <div class="output-box" id="outputBox">
+                        <div class="output-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 12h8"/>
+                                <path d="M12 8v8"/>
+                            </svg>
+                            <span>Run a prompt to see AI-generated results</span>
+                        </div>
+                    </div>
                     <div class="output-stats" id="outputStats"></div>
                 </div>
             </section>
 
             <!-- Workflows -->
             <section class="panel" id="workflows">
-                <h2>Resume Analysis Pipeline</h2>
-                <p class="desc">Paste a resume below and run all 3 extraction steps in sequence.</p>
-
-                <div class="workflow-input">
-                    <textarea id="workflowResume" placeholder="Paste resume text..."></textarea>
-                    <input type="file" id="workflowFile" accept=".pdf,.txt">
+                <div class="workflow-header">
+                    <div class="workflow-title-group">
+                        <h2>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
+                            Workflows
+                        </h2>
+                        <p class="desc">Run multi-step AI pipelines to analyze resumes and generate insights.</p>
+                    </div>
+                    <div class="workflow-actions">
+                        <button id="createWorkflowBtn" class="btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="16"/>
+                                <line x1="8" y1="12" x2="16" y2="12"/>
+                            </svg>
+                            Create Workflow
+                        </button>
+                    </div>
                 </div>
 
-                <button id="runWorkflowBtn" class="primary">Run Workflow</button>
+                <div class="workflow-selector">
+                    <label>Select Workflow:</label>
+                    <select id="workflowSelect">
+                        <option value="resume-analysis" selected>📋 Resume Analysis Pipeline</option>
+                    </select>
+                </div>
+
+                <div class="workflow-input-card">
+                    <div class="card-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                        <span>Resume Input</span>
+                    </div>
+                    <textarea id="workflowResume" placeholder="Paste the complete resume text here..."></textarea>
+                    <div class="workflow-file-row">
+                        <label class="file-upload-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17 8 12 3 7 8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                            Upload PDF/TXT
+                            <input type="file" id="workflowFile" accept=".pdf,.txt">
+                        </label>
+                        <span id="workflowFileName" class="file-name"></span>
+                    </div>
+                </div>
+
+                <div class="workflow-run-actions">
+                    <button id="runWorkflowBtn" class="btn-primary btn-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        Run Workflow
+                    </button>
+                    <button id="saveWorkflowJsonBtn" class="btn-secondary" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Export JSON
+                    </button>
+                </div>
 
                 <div class="steps">
                     <div class="step" data-step="1">
-                        <div class="step-title"><span>1</span> Basic Info</div>
-                        <div class="step-status" id="s1status">waiting</div>
-                        <pre class="step-result" id="s1result">Name, location, contact, domain...</pre>
+                        <div class="step-indicator">
+                            <div class="step-number">1</div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                                Basic Information
+                            </div>
+                            <div class="step-status" id="s1status">
+                                <span class="status-dot"></span>
+                                Waiting to start
+                            </div>
+                            <pre class="step-result" id="s1result">Extract name, location, contact details, and professional domain...</pre>
+                        </div>
                     </div>
                     <div class="step" data-step="2">
-                        <div class="step-title"><span>2</span> Education & Experience</div>
-                        <div class="step-status" id="s2status">waiting</div>
-                        <pre class="step-result" id="s2result">Degrees, skills, certifications...</pre>
+                        <div class="step-indicator">
+                            <div class="step-number">2</div>
+                            <div class="step-line"></div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                                Education & Experience
+                            </div>
+                            <div class="step-status" id="s2status">
+                                <span class="status-dot"></span>
+                                Waiting to start
+                            </div>
+                            <pre class="step-result" id="s2result">Extract degrees, skills, certifications, and work experience...</pre>
+                        </div>
                     </div>
                     <div class="step" data-step="3">
-                        <div class="step-title"><span>3</span> Interview Questions</div>
-                        <div class="step-status" id="s3status">waiting</div>
-                        <pre class="step-result" id="s3result">10 personalized questions...</pre>
+                        <div class="step-indicator">
+                            <div class="step-number">3</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-title">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                                </svg>
+                                Interview Questions
+                            </div>
+                            <div class="step-status" id="s3status">
+                                <span class="status-dot"></span>
+                                Waiting to start
+                            </div>
+                            <pre class="step-result" id="s3result">Generate 10 personalized interview questions based on the candidate profile...</pre>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -119,18 +333,120 @@
             <!-- History -->
             <section class="panel" id="history">
                 <div class="history-header">
-                    <h2>History</h2>
-                    <button id="clearHistoryBtn">Clear All</button>
+                    <div class="history-title-group">
+                        <h2>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            Prompt History
+                        </h2>
+                        <p class="desc">View and reload your previous prompts and results</p>
+                    </div>
+                    <button id="clearHistoryBtn" class="btn-secondary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="3 6 5 6 21 6"/>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                        </svg>
+                        Clear All
+                    </button>
                 </div>
                 <div class="history-list" id="historyList">
-                    <p class="empty">No history yet</p>
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <p>No history yet</p>
+                        <span>Your prompt history will appear here</span>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
 
-    <div class="loader" id="loader"><div class="spin"></div></div>
-    <div class="toast" id="toast"></div>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <span>Processing...</span>
+        </div>
+    </div>
+    <div class="toast" id="toast">
+        <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <span class="toast-message"></span>
+    </div>
+
+    <!-- Create Workflow Modal -->
+    <div class="modal-overlay" id="workflowModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    Create New Workflow
+                </h3>
+                <button class="modal-close" id="closeWorkflowModal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Workflow Name</label>
+                    <input type="text" id="newWorkflowName" placeholder="e.g., Technical Skills Analysis">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" id="newWorkflowDesc" placeholder="Brief description of what this workflow does">
+                </div>
+                
+                <div class="workflow-steps-builder">
+                    <div class="steps-header">
+                        <label>Workflow Steps</label>
+                        <button type="button" id="addStepBtn" class="btn-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="16"/>
+                                <line x1="8" y1="12" x2="16" y2="12"/>
+                            </svg>
+                            Add Step
+                        </button>
+                    </div>
+                    <div class="steps-list" id="stepsBuilder">
+                        <div class="step-builder-item" data-step="1">
+                            <div class="step-builder-header">
+                                <span class="step-badge">Step 1</span>
+                                <button type="button" class="remove-step-btn" title="Remove step">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="18" y1="6" x2="6" y2="18"/>
+                                        <line x1="6" y1="6" x2="18" y2="18"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <input type="text" class="step-name-input" placeholder="Step name (e.g., Extract Skills)">
+                            <textarea class="step-prompt-input" placeholder="System prompt for this step..."></textarea>
+                            <div class="step-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="use-prev-output" checked>
+                                    <span>Include previous step output as context</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelWorkflowBtn" class="btn-secondary">Cancel</button>
+                <button id="saveNewWorkflowBtn" class="btn-primary">Create Workflow</button>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <script src="app.js"></script>
