@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoPrac</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">GoPrac</div>
+            <nav class="tabs">
+                <button class="tab active" data-tab="playground">Playground</button>
+                <button class="tab" data-tab="workflows">Workflows</button>
+                <button class="tab" data-tab="history">History</button>
+            </nav>
+            <div class="settings-toggle">
+                <button id="settingsBtn">Settings ▾</button>
+                <div class="settings-dropdown" id="settingsDropdown">
+                    <label>Model
+                        <select id="modelSelect">
+                            <option value="gpt-4o-mini" selected>gpt-4o-mini</option>
+                            <option value="gpt-4o">gpt-4o</option>
+                            <option value="gpt-4-turbo">gpt-4-turbo</option>
+                            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                        </select>
+                    </label>
+                    <label>Temperature <span id="tempVal">0.7</span>
+                        <input type="range" id="temperature" min="0" max="2" step="0.1" value="0.7">
+                    </label>
+                    <label>Max Tokens
+                        <input type="number" id="maxTokens" value="4096">
+                    </label>
+                    <label>Top P <span id="topPVal">1</span>
+                        <input type="range" id="topP" min="0" max="1" step="0.1" value="1">
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <!-- Playground -->
+            <section class="panel active" id="playground">
+                <div class="prompt-picker">
+                    <span>Load prompt:</span>
+                    <select id="promptSelect">
+                        <option value="">-- select --</option>
+                        <option value="extract-basic">Extract Basic Info</option>
+                        <option value="extract-education">Extract Education</option>
+                        <option value="generate-questions">Generate Questions</option>
+                    </select>
+                </div>
+
+                <div class="editor-area">
+                    <div class="editor-col">
+                        <label>System Prompt</label>
+                        <textarea id="systemPrompt" placeholder="Instructions for the AI..."></textarea>
+                    </div>
+                    <div class="editor-col">
+                        <label>User Input</label>
+                        <textarea id="userInput" placeholder="Paste resume or type here..."></textarea>
+                        <div class="file-row">
+                            <input type="file" id="pdfUpload" accept=".pdf,.txt">
+                            <span id="fileName"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="runBtn" class="primary">Run</button>
+                    <button id="clearBtn">Clear</button>
+                </div>
+
+                <div class="output-area">
+                    <div class="output-header">
+                        <label>Output</label>
+                        <div>
+                            <button id="copyBtn" title="Copy">Copy</button>
+                            <button id="saveBtn" title="Save">Save</button>
+                        </div>
+                    </div>
+                    <div class="output-box" id="outputBox">Run a prompt to see results</div>
+                    <div class="output-stats" id="outputStats"></div>
+                </div>
+            </section>
+
+            <!-- Workflows -->
+            <section class="panel" id="workflows">
+                <h2>Resume Analysis Pipeline</h2>
+                <p class="desc">Paste a resume below and run all 3 extraction steps in sequence.</p>
+
+                <div class="workflow-input">
+                    <textarea id="workflowResume" placeholder="Paste resume text..."></textarea>
+                    <input type="file" id="workflowFile" accept=".pdf,.txt">
+                </div>
+
+                <button id="runWorkflowBtn" class="primary">Run Workflow</button>
+
+                <div class="steps">
+                    <div class="step" data-step="1">
+                        <div class="step-title"><span>1</span> Basic Info</div>
+                        <div class="step-status" id="s1status">waiting</div>
+                        <pre class="step-result" id="s1result">Name, location, contact, domain...</pre>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-title"><span>2</span> Education & Experience</div>
+                        <div class="step-status" id="s2status">waiting</div>
+                        <pre class="step-result" id="s2result">Degrees, skills, certifications...</pre>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-title"><span>3</span> Interview Questions</div>
+                        <div class="step-status" id="s3status">waiting</div>
+                        <pre class="step-result" id="s3result">10 personalized questions...</pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History -->
+            <section class="panel" id="history">
+                <div class="history-header">
+                    <h2>History</h2>
+                    <button id="clearHistoryBtn">Clear All</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <p class="empty">No history yet</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="loader" id="loader"><div class="spin"></div></div>
+    <div class="toast" id="toast"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
