@@ -1,0 +1,908 @@
+{
+  "slide_id": "q1_thinking",
+  "audio_file": "q1_thinking.mp3",
+  "total_duration_sec": 62.46,
+  "word_count": 147,
+  "words": [
+    {
+      "text": "Let's",
+      "start_sec": 0.05,
+      "end_sec": 0.375,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "rewind",
+      "start_sec": 0.375,
+      "end_sec": 0.95,
+      "duration_sec": 0.575
+    },
+    {
+      "text": "and",
+      "start_sec": 0.975,
+      "end_sec": 1.238,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "think",
+      "start_sec": 1.238,
+      "end_sec": 1.625,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "through",
+      "start_sec": 1.663,
+      "end_sec": 1.888,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "this",
+      "start_sec": 1.887,
+      "end_sec": 2.013,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "step",
+      "start_sec": 2.013,
+      "end_sec": 2.312,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "by",
+      "start_sec": 2.312,
+      "end_sec": 2.487,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "step",
+      "start_sec": 2.487,
+      "end_sec": 2.962,
+      "duration_sec": 0.475
+    },
+    {
+      "text": ".",
+      "start_sec": 2.962,
+      "end_sec": 3.05,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "First",
+      "start_sec": 3.3,
+      "end_sec": 3.662,
+      "duration_sec": 0.362
+    },
+    {
+      "text": "up",
+      "start_sec": 3.663,
+      "end_sec": 3.988,
+      "duration_sec": 0.325
+    },
+    {
+      "text": ",",
+      "start_sec": 4.075,
+      "end_sec": 4.275,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "you",
+      "start_sec": 4.275,
+      "end_sec": 4.475,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "want",
+      "start_sec": 4.475,
+      "end_sec": 4.662,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "to",
+      "start_sec": 4.662,
+      "end_sec": 4.775,
+      "duration_sec": 0.113
+    },
+    {
+      "text": "*",
+      "start_sec": 4.8,
+      "end_sec": 5.425,
+      "duration_sec": 0.625
+    },
+    {
+      "text": "locate",
+      "start_sec": 5.45,
+      "end_sec": 5.913,
+      "duration_sec": 0.463
+    },
+    {
+      "text": "the",
+      "start_sec": 5.912,
+      "end_sec": 6.0,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "mismatch",
+      "start_sec": 6.0,
+      "end_sec": 6.537,
+      "duration_sec": 0.537
+    },
+    {
+      "text": "*",
+      "start_sec": 6.537,
+      "end_sec": 7.025,
+      "duration_sec": 0.487
+    },
+    {
+      "text": ".",
+      "start_sec": 7.025,
+      "end_sec": 7.113,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Ideally",
+      "start_sec": 7.362,
+      "end_sec": 8.012,
+      "duration_sec": 0.65
+    },
+    {
+      "text": ",",
+      "start_sec": 8.1,
+      "end_sec": 8.188,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "you'd",
+      "start_sec": 8.188,
+      "end_sec": 8.512,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "trace",
+      "start_sec": 8.512,
+      "end_sec": 8.825,
+      "duration_sec": 0.312
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 8.825,
+      "end_sec": 9.562,
+      "duration_sec": 0.738
+    },
+    {
+      "text": "from",
+      "start_sec": 9.562,
+      "end_sec": 9.8,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "CheckoutService",
+      "start_sec": 9.8,
+      "end_sec": 10.8,
+      "duration_sec": 1.0
+    },
+    {
+      "text": "through",
+      "start_sec": 10.925,
+      "end_sec": 11.188,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "CheckoutServlet",
+      "start_sec": 11.188,
+      "end_sec": 12.412,
+      "duration_sec": 1.225
+    },
+    {
+      "text": "to",
+      "start_sec": 12.463,
+      "end_sec": 12.562,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "the",
+      "start_sec": 12.562,
+      "end_sec": 12.688,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "JSP",
+      "start_sec": 12.688,
+      "end_sec": 13.312,
+      "duration_sec": 0.625
+    },
+    {
+      "text": "binding",
+      "start_sec": 13.312,
+      "end_sec": 13.787,
+      "duration_sec": 0.475
+    },
+    {
+      "text": ".",
+      "start_sec": 13.787,
+      "end_sec": 13.875,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "No",
+      "start_sec": 14.125,
+      "end_sec": 14.45,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "recomputation",
+      "start_sec": 14.45,
+      "end_sec": 15.487,
+      "duration_sec": 1.038
+    },
+    {
+      "text": "should",
+      "start_sec": 15.512,
+      "end_sec": 15.75,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "happen",
+      "start_sec": 15.75,
+      "end_sec": 16.125,
+      "duration_sec": 0.375
+    },
+    {
+      "text": "there",
+      "start_sec": 16.125,
+      "end_sec": 16.438,
+      "duration_sec": 0.312
+    },
+    {
+      "text": ".",
+      "start_sec": 16.438,
+      "end_sec": 16.525,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "But",
+      "start_sec": 16.775,
+      "end_sec": 16.975,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "you",
+      "start_sec": 16.975,
+      "end_sec": 17.225,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "identified",
+      "start_sec": 17.225,
+      "end_sec": 17.838,
+      "duration_sec": 0.613
+    },
+    {
+      "text": "a",
+      "start_sec": 17.837,
+      "end_sec": 17.887,
+      "duration_sec": 0.05
+    },
+    {
+      "text": "mismatch",
+      "start_sec": 17.887,
+      "end_sec": 18.537,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "between",
+      "start_sec": 18.538,
+      "end_sec": 18.888,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "CheckoutService",
+      "start_sec": 18.887,
+      "end_sec": 19.85,
+      "duration_sec": 0.963
+    },
+    {
+      "text": "and",
+      "start_sec": 19.875,
+      "end_sec": 20.1,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "JSP",
+      "start_sec": 20.1,
+      "end_sec": 20.8,
+      "duration_sec": 0.7
+    },
+    {
+      "text": ",",
+      "start_sec": 20.887,
+      "end_sec": 21.137,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "yet",
+      "start_sec": 21.137,
+      "end_sec": 21.462,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "missed",
+      "start_sec": 21.462,
+      "end_sec": 21.862,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "documenting",
+      "start_sec": 21.887,
+      "end_sec": 22.7,
+      "duration_sec": 0.812
+    },
+    {
+      "text": "those",
+      "start_sec": 22.7,
+      "end_sec": 22.988,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "*",
+      "start_sec": 23.012,
+      "end_sec": 23.65,
+      "duration_sec": 0.637
+    },
+    {
+      "text": "intermediate",
+      "start_sec": 23.675,
+      "end_sec": 24.438,
+      "duration_sec": 0.762
+    },
+    {
+      "text": "overwrites",
+      "start_sec": 24.462,
+      "end_sec": 25.1,
+      "duration_sec": 0.637
+    },
+    {
+      "text": "*",
+      "start_sec": 25.113,
+      "end_sec": 25.663,
+      "duration_sec": 0.55
+    },
+    {
+      "text": ".",
+      "start_sec": 25.663,
+      "end_sec": 25.75,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Next",
+      "start_sec": 26.0,
+      "end_sec": 26.613,
+      "duration_sec": 0.613
+    },
+    {
+      "text": ",",
+      "start_sec": 26.7,
+      "end_sec": 26.887,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "validating",
+      "start_sec": 26.887,
+      "end_sec": 27.688,
+      "duration_sec": 0.8
+    },
+    {
+      "text": "business",
+      "start_sec": 27.688,
+      "end_sec": 28.075,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "rules",
+      "start_sec": 28.075,
+      "end_sec": 28.488,
+      "duration_sec": 0.412
+    },
+    {
+      "text": "is",
+      "start_sec": 28.525,
+      "end_sec": 28.737,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "crucial",
+      "start_sec": 28.738,
+      "end_sec": 29.3,
+      "duration_sec": 0.562
+    },
+    {
+      "text": ".",
+      "start_sec": 29.3,
+      "end_sec": 29.387,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "You",
+      "start_sec": 29.637,
+      "end_sec": 29.8,
+      "duration_sec": 0.163
+    },
+    {
+      "text": "should",
+      "start_sec": 29.8,
+      "end_sec": 30.012,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "restate",
+      "start_sec": 30.012,
+      "end_sec": 30.5,
+      "duration_sec": 0.487
+    },
+    {
+      "text": "the",
+      "start_sec": 30.5,
+      "end_sec": 30.663,
+      "duration_sec": 0.163
+    },
+    {
+      "text": "*",
+      "start_sec": 30.675,
+      "end_sec": 31.387,
+      "duration_sec": 0.713
+    },
+    {
+      "text": "\"no",
+      "start_sec": 31.512,
+      "end_sec": 31.837,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "recomputation",
+      "start_sec": 31.837,
+      "end_sec": 32.825,
+      "duration_sec": 0.988
+    },
+    {
+      "text": "in",
+      "start_sec": 32.85,
+      "end_sec": 33.062,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "view",
+      "start_sec": 33.062,
+      "end_sec": 33.388,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "\" rule",
+      "start_sec": 33.45,
+      "end_sec": 33.7,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "*",
+      "start_sec": 33.725,
+      "end_sec": 34.5,
+      "duration_sec": 0.775
+    },
+    {
+      "text": "and",
+      "start_sec": 34.55,
+      "end_sec": 34.812,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "test",
+      "start_sec": 34.812,
+      "end_sec": 35.1,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "helper",
+      "start_sec": 35.1,
+      "end_sec": 35.413,
+      "duration_sec": 0.312
+    },
+    {
+      "text": "tags",
+      "start_sec": 35.413,
+      "end_sec": 35.925,
+      "duration_sec": 0.512
+    },
+    {
+      "text": ".",
+      "start_sec": 35.925,
+      "end_sec": 36.012,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "You",
+      "start_sec": 36.263,
+      "end_sec": 36.488,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "mentioned",
+      "start_sec": 36.487,
+      "end_sec": 36.9,
+      "duration_sec": 0.412
+    },
+    {
+      "text": "the",
+      "start_sec": 36.9,
+      "end_sec": 37.012,
+      "duration_sec": 0.113
+    },
+    {
+      "text": "recomputation",
+      "start_sec": 37.013,
+      "end_sec": 37.925,
+      "duration_sec": 0.912
+    },
+    {
+      "text": "risk",
+      "start_sec": 37.925,
+      "end_sec": 38.487,
+      "duration_sec": 0.562
+    },
+    {
+      "text": "but",
+      "start_sec": 38.625,
+      "end_sec": 38.888,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "didn't",
+      "start_sec": 38.888,
+      "end_sec": 39.1,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "cite",
+      "start_sec": 39.1,
+      "end_sec": 39.375,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "the",
+      "start_sec": 39.375,
+      "end_sec": 39.438,
+      "duration_sec": 0.062
+    },
+    {
+      "text": "specific",
+      "start_sec": 39.438,
+      "end_sec": 40.125,
+      "duration_sec": 0.688
+    },
+    {
+      "text": "rule",
+      "start_sec": 40.125,
+      "end_sec": 40.462,
+      "duration_sec": 0.338
+    },
+    {
+      "text": "or",
+      "start_sec": 40.487,
+      "end_sec": 40.675,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "helper",
+      "start_sec": 40.675,
+      "end_sec": 40.987,
+      "duration_sec": 0.312
+    },
+    {
+      "text": "tag",
+      "start_sec": 40.987,
+      "end_sec": 41.35,
+      "duration_sec": 0.362
+    },
+    {
+      "text": ".",
+      "start_sec": 41.35,
+      "end_sec": 41.438,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Finally",
+      "start_sec": 41.688,
+      "end_sec": 42.425,
+      "duration_sec": 0.738
+    },
+    {
+      "text": ",",
+      "start_sec": 42.513,
+      "end_sec": 42.7,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "inspecting",
+      "start_sec": 42.7,
+      "end_sec": 43.35,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "fallbacks",
+      "start_sec": 43.35,
+      "end_sec": 44.025,
+      "duration_sec": 0.675
+    },
+    {
+      "text": "is",
+      "start_sec": 44.05,
+      "end_sec": 44.275,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "essential",
+      "start_sec": 44.288,
+      "end_sec": 44.962,
+      "duration_sec": 0.675
+    },
+    {
+      "text": ".",
+      "start_sec": 44.962,
+      "end_sec": 45.05,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Ideally",
+      "start_sec": 45.3,
+      "end_sec": 45.975,
+      "duration_sec": 0.675
+    },
+    {
+      "text": ",",
+      "start_sec": 46.062,
+      "end_sec": 46.188,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "check",
+      "start_sec": 46.188,
+      "end_sec": 46.5,
+      "duration_sec": 0.312
+    },
+    {
+      "text": "CheckoutServlet",
+      "start_sec": 46.5,
+      "end_sec": 47.475,
+      "duration_sec": 0.975
+    },
+    {
+      "text": "for",
+      "start_sec": 47.475,
+      "end_sec": 47.625,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "conditional",
+      "start_sec": 47.625,
+      "end_sec": 48.237,
+      "duration_sec": 0.613
+    },
+    {
+      "text": "overwrites",
+      "start_sec": 48.263,
+      "end_sec": 49.025,
+      "duration_sec": 0.762
+    },
+    {
+      "text": "and",
+      "start_sec": 49.112,
+      "end_sec": 49.362,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "stale",
+      "start_sec": 49.362,
+      "end_sec": 49.737,
+      "duration_sec": 0.375
+    },
+    {
+      "text": "discount",
+      "start_sec": 49.737,
+      "end_sec": 50.188,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "state",
+      "start_sec": 50.188,
+      "end_sec": 50.675,
+      "duration_sec": 0.487
+    },
+    {
+      "text": ".",
+      "start_sec": 50.675,
+      "end_sec": 50.762,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "You",
+      "start_sec": 51.013,
+      "end_sec": 51.263,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "raised",
+      "start_sec": 51.263,
+      "end_sec": 51.6,
+      "duration_sec": 0.338
+    },
+    {
+      "text": "the",
+      "start_sec": 51.6,
+      "end_sec": 51.688,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "stale",
+      "start_sec": 51.688,
+      "end_sec": 52.087,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "discount",
+      "start_sec": 52.087,
+      "end_sec": 52.55,
+      "duration_sec": 0.463
+    },
+    {
+      "text": "idea",
+      "start_sec": 52.55,
+      "end_sec": 53.125,
+      "duration_sec": 0.575
+    },
+    {
+      "text": "but",
+      "start_sec": 53.25,
+      "end_sec": 53.487,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "skipped",
+      "start_sec": 53.487,
+      "end_sec": 53.887,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "those",
+      "start_sec": 53.888,
+      "end_sec": 54.213,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "servlet-level",
+      "start_sec": 54.263,
+      "end_sec": 55.163,
+      "duration_sec": 0.9
+    },
+    {
+      "text": "fallbacks",
+      "start_sec": 55.163,
+      "end_sec": 55.913,
+      "duration_sec": 0.75
+    },
+    {
+      "text": ".",
+      "start_sec": 55.913,
+      "end_sec": 56.0,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "So",
+      "start_sec": 56.25,
+      "end_sec": 56.45,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "next",
+      "start_sec": 56.45,
+      "end_sec": 56.725,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "time",
+      "start_sec": 56.725,
+      "end_sec": 57.138,
+      "duration_sec": 0.412
+    },
+    {
+      "text": ",",
+      "start_sec": 57.225,
+      "end_sec": 57.363,
+      "duration_sec": 0.138
+    },
+    {
+      "text": "start",
+      "start_sec": 57.362,
+      "end_sec": 57.8,
+      "duration_sec": 0.438
+    },
+    {
+      "text": "with",
+      "start_sec": 57.8,
+      "end_sec": 58.012,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "tracing",
+      "start_sec": 58.013,
+      "end_sec": 58.562,
+      "duration_sec": 0.55
+    },
+    {
+      "text": "every",
+      "start_sec": 58.6,
+      "end_sec": 58.975,
+      "duration_sec": 0.375
+    },
+    {
+      "text": "handoff",
+      "start_sec": 58.975,
+      "end_sec": 59.562,
+      "duration_sec": 0.588
+    },
+    {
+      "text": ",",
+      "start_sec": 59.65,
+      "end_sec": 59.85,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "then",
+      "start_sec": 59.85,
+      "end_sec": 60.15,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "highlight",
+      "start_sec": 60.15,
+      "end_sec": 60.7,
+      "duration_sec": 0.55
+    },
+    {
+      "text": "rule",
+      "start_sec": 60.737,
+      "end_sec": 61.087,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "violations",
+      "start_sec": 61.087,
+      "end_sec": 61.825,
+      "duration_sec": 0.738
+    },
+    {
+      "text": "clearly",
+      "start_sec": 61.825,
+      "end_sec": 62.375,
+      "duration_sec": 0.55
+    },
+    {
+      "text": ".",
+      "start_sec": 62.375,
+      "end_sec": 62.462,
+      "duration_sec": 0.087
+    }
+  ],
+  "pause_markers": [
+    {
+      "position": 50,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 362,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 584,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 803,
+      "duration_sec": 1.5
+    }
+  ]
+}

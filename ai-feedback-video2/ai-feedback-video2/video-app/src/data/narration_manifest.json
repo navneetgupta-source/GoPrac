@@ -1,0 +1,168 @@
+[
+    {
+        "question_id": "intro",
+        "question_number": 0,
+        "slide_type": "intro",
+        "slide_index": 1,
+        "anim_num": 1,
+        "shape_id": "intro_caption",
+        "animation": {
+            "type": "fade_in",
+            "duration_sec": 8.275,
+            "delay_sec": 0.0
+        },
+        "narration": {
+            "text": "Hi Raj, I am GoPrac's AI Coach. Let's walk through your feedback on the Order Processing Failure Debugging problem.",
+            "keywords": [
+                {
+                    "text": "FAANG mentors"
+                },
+                {
+                    "text": "Premium institutes"
+                },
+                {
+                    "text": "Real-time insights"
+                }
+            ],
+            "audio_file": "audio/intro_welcome.mp3",
+            "voice_style": {
+                "style": "cheerful",
+                "rate": "-5%",
+                "pitch": "+2%",
+                "role_type": "Girl"
+            }
+        }
+    },
+    {
+        "question_id": "case",
+        "question_number": 0,
+        "slide_type": "case",
+        "slide_index": 2,
+        "anim_num": 1,
+        "shape_id": "case_block",
+        "animation": {
+            "type": "slide_in_up",
+            "duration_sec": 79.312,
+            "delay_sec": 0.0
+        },
+        "narration": {
+            "text": "What is the Problem Scenario? The order processing service sometimes fails to update inventory correctly, leading to overselling. The JSP displays available stock based on a separate query that may be stale. This matters because customers see incorrect stock levels and orders get cancelled. Now let's understand the Data Simplified. The payload includes order details, inventory updates, and confirmation status. OrderServlet orchestrates calls and uses InventoryHelper methods and custom tags. The confirmation email binds to displayStock, so any stale read can mislead customers. What are the Business Rules? The view layer must always use the latest inventory snapshot from the service. Display must match the inventory service's confirmed stock. Failed inventory updates must rollback the order and clear stale values. What are the Performance Constraints? The hotfix must deploy without slowing checkout. Diagnostics should avoid heavy instrumentation. The solution must preserve order confirmation SLA under 1 second.",
+            "keywords": [
+                {
+                    "text": "OrderService emits finalStock for"
+                },
+                {
+                    "text": "JSP sometimes reads stale"
+                },
+                {
+                    "text": "Inventory failures can leave"
+                },
+                {
+                    "text": "Payload includes order details,"
+                }
+            ],
+            "audio_file": "audio/case_overview.mp3",
+            "voice_style": {
+                "style": "friendly",
+                "rate": "-8%",
+                "pitch": "+0%",
+                "role_type": "Boy"
+            }
+        }
+    },
+    {
+        "question_id": "q1",
+        "question_number": 1,
+        "slide_type": "q_summary",
+        "slide_index": 3,
+        "anim_num": 1,
+        "shape_id": "q_summary_block",
+        "animation": {
+            "type": "fade_in",
+            "duration_sec": 40.575,
+            "delay_sec": 0.0
+        },
+        "narration": {
+            "text": "What is the Question asking? The question asks you to trace inventory updates from OrderService through OrderServlet, helper tags, and JSP to find why stock levels mismatch. You had to find where the inconsistency originates. Feedback Summary. You correctly suspected the view layer and JSP as a likely mismatch point. You missed tracing OrderServlet branches and helper tag recomputations that can overwrite displayStock. So you started in the right direction, but did not complete the full tracing. You scored 7.5 out of 10. You currently stand Meets Industry Standards.",
+            "keywords": [
+                {
+                    "text": "Trace Variable Flows"
+                }
+            ],
+            "audio_file": "audio/q1_summary.mp3",
+            "voice_style": {
+                "style": "empathetic",
+                "rate": "-6%",
+                "pitch": "+1%",
+                "role_type": "Girl"
+            }
+        }
+    },
+    {
+        "question_id": "q1",
+        "question_number": 1,
+        "slide_type": "feedback_blocks",
+        "slide_index": 4,
+        "anim_num": 1,
+        "shape_id": "feedback_blocks",
+        "animation": {
+            "type": "slide_in_up",
+            "duration_sec": 49.2,
+            "delay_sec": 0.0
+        },
+        "narration": {
+            "text": "Let's start with what you did right. First, you clearly pinpointed the mismatch region between OrderService and the JSP view layer. Second, you noted that inventory queries remained stale after failed updates in some cases. Third, you recognized that helper logic could recalculate stock incorrectly in the JSP. These are solid observations and show good initial focus. Now let's see What went wrong. One, you skipped tracing OrderServlet branches that can overwrite displayStock during request handling. Two, you did not check InventoryHelper or tag helpers for stale reads. Three, you left out mentioning the no-stale-read business rule explicitly in your notes. Lets break down the mistakes in next slide.",
+            "keywords": [
+                {
+                    "text": "right_1"
+                },
+                {
+                    "text": "right_2"
+                },
+                {
+                    "text": "right_3"
+                },
+                {
+                    "text": "wrong_1"
+                },
+                {
+                    "text": "wrong_2"
+                },
+                {
+                    "text": "wrong_3"
+                }
+            ],
+            "audio_file": "audio/q1_feedback.mp3",
+            "voice_style": {
+                "style": "cheerful",
+                "rate": "-5%",
+                "pitch": "+1%",
+                "role_type": "Girl"
+            }
+        }
+    },
+    {
+        "question_id": "q1",
+        "question_number": 1,
+        "slide_type": "thinking_steps",
+        "slide_index": 5,
+        "anim_num": 1,
+        "shape_id": "thinking_table",
+        "animation": {
+            "type": "slide_in_left",
+            "duration_sec": 83.625,
+            "delay_sec": 0.0
+        },
+        "narration": {
+            "text": "Lets analyze your thinking process step by step. Step one is Locate mismatch, where you should trace finalStock from OrderService through OrderServlet to the JSP and confirm no stale reads happen. Step two is Validate rules, where you should restate the no-stale-read rule and test helper tags for compliance. Step three is Inspect fallbacks, where you should check OrderServlet conditional overwrites and stale inventory state when updates fail. Now lets see How You Thought. For Locate mismatch, you identified the OrderService vs JSP mismatch, but you did not document intermediate overwrites. My advice is that you should trace finalStock from service to JSP and ensure no stale reads. For Validate rules, you mentioned recomputation risk, but you did not cite the specific rule or helper tag. My advice is that you should confirm the no-stale-read rule and test helper tags for compliance. For Inspect fallbacks, you raised the stale inventory idea, but you skipped checking servlet-level fallbacks. My advice is that you should inspect servlet conditionals and stale inventory state on update failures. I would also advice you to go through the concepts of: Variable Tracing, Business Rule Validation, and Fallback Logic.",
+            "keywords": [],
+            "audio_file": "audio/q1_thinking.mp3",
+            "voice_style": {
+                "style": "friendly",
+                "rate": "-7%",
+                "pitch": "+0%",
+                "role_type": "Boy"
+            }
+        }
+    }
+]

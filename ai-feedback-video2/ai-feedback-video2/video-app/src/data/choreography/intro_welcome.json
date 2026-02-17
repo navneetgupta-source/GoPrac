@@ -1,0 +1,154 @@
+{
+  "slideType": "intro_welcome",
+  "totalDurationFrames": 248,
+  "actualDurationSec": 8.275,
+  "animations": [
+    {
+      "blockId": "intro_caption",
+      "type": "fadeIn",
+      "startFrame": 0,
+      "durationFrames": 60,
+      "easing": "easeOut"
+    }
+  ],
+  "narration": {
+    "audioFile": "audio/intro_welcome.mp3",
+    "startFrame": 0,
+    "endFrame": 248,
+    "durationSec": 8.275,
+    "wordTimings": [
+      {
+        "word": "Hi",
+        "startFrame": 2,
+        "endFrame": 9,
+        "durationFrames": 8
+      },
+      {
+        "word": "Laukik",
+        "startFrame": 9,
+        "endFrame": 28,
+        "durationFrames": 19
+      },
+      {
+        "word": ",",
+        "startFrame": 31,
+        "endFrame": 37,
+        "durationFrames": 6
+      },
+      {
+        "word": "I",
+        "startFrame": 37,
+        "endFrame": 44,
+        "durationFrames": 7
+      },
+      {
+        "word": "am",
+        "startFrame": 44,
+        "endFrame": 50,
+        "durationFrames": 5
+      },
+      {
+        "word": "GoPrac's",
+        "startFrame": 50,
+        "endFrame": 68,
+        "durationFrames": 18
+      },
+      {
+        "word": "AI",
+        "startFrame": 68,
+        "endFrame": 80,
+        "durationFrames": 12
+      },
+      {
+        "word": "Coach",
+        "startFrame": 80,
+        "endFrame": 98,
+        "durationFrames": 18
+      },
+      {
+        "word": ".",
+        "startFrame": 98,
+        "endFrame": 100,
+        "durationFrames": 3
+      },
+      {
+        "word": "Let's",
+        "startFrame": 108,
+        "endFrame": 117,
+        "durationFrames": 10
+      },
+      {
+        "word": "walk",
+        "startFrame": 117,
+        "endFrame": 128,
+        "durationFrames": 10
+      },
+      {
+        "word": "through",
+        "startFrame": 128,
+        "endFrame": 133,
+        "durationFrames": 6
+      },
+      {
+        "word": "your",
+        "startFrame": 133,
+        "endFrame": 138,
+        "durationFrames": 4
+      },
+      {
+        "word": "feedback",
+        "startFrame": 138,
+        "endFrame": 157,
+        "durationFrames": 19
+      },
+      {
+        "word": "on",
+        "startFrame": 158,
+        "endFrame": 162,
+        "durationFrames": 4
+      },
+      {
+        "word": "the",
+        "startFrame": 162,
+        "endFrame": 165,
+        "durationFrames": 3
+      },
+      {
+        "word": "Checkout",
+        "startFrame": 165,
+        "endFrame": 180,
+        "durationFrames": 15
+      },
+      {
+        "word": "Total",
+        "startFrame": 182,
+        "endFrame": 193,
+        "durationFrames": 12
+      },
+      {
+        "word": "Integrity",
+        "startFrame": 194,
+        "endFrame": 217,
+        "durationFrames": 23
+      },
+      {
+        "word": "Debugging",
+        "startFrame": 217,
+        "endFrame": 231,
+        "durationFrames": 14
+      },
+      {
+        "word": "problem",
+        "startFrame": 231,
+        "endFrame": 246,
+        "durationFrames": 15
+      },
+      {
+        "word": ".",
+        "startFrame": 246,
+        "endFrame": 248,
+        "durationFrames": 3
+      }
+    ]
+  }
+}

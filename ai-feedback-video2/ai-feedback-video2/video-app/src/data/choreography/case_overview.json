@@ -1,0 +1,1183 @@
+{
+  "slideType": "case_overview",
+  "totalDurationFrames": 2379,
+  "actualDurationSec": 79.312,
+  "animations": [
+    {
+      "blockId": "problem_scenario",
+      "type": "slideInLeft",
+      "startFrame": 0,
+      "durationFrames": 40,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "data_simplified",
+      "type": "slideInRight",
+      "startFrame": 576,
+      "durationFrames": 40,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "business_rules",
+      "type": "slideInLeft",
+      "startFrame": 1170,
+      "durationFrames": 40,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "performance_constraints",
+      "type": "slideInRight",
+      "startFrame": 1764,
+      "durationFrames": 40,
+      "easing": "easeOut"
+    }
+  ],
+  "highlights": [
+    {
+      "blockId": "problem_scenario",
+      "startFrame": 0,
+      "endFrame": 594,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "What is the Problem Scenario? The order processing service sometimes fails to update inventory correctly, leading to overselling. The JSP displays available stock based on a separate query that may be stale. This matters because customers see incorrect stock levels and orders get cancelled.",
+          "startFrame": 0,
+          "endFrame": 594
+        }
+      ]
+    },
+    {
+      "blockId": "data_simplified",
+      "startFrame": 594,
+      "endFrame": 1188,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "Now let's understand the Data Simplified. The payload includes order details, inventory updates, and confirmation status. OrderServlet orchestrates calls and uses InventoryHelper methods and custom tags. The confirmation email binds to displayStock, so any stale read can mislead customers.",
+          "startFrame": 594,
+          "endFrame": 1188
+        }
+      ]
+    },
+    {
+      "blockId": "business_rules",
+      "startFrame": 1188,
+      "endFrame": 1782,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "What are the Business Rules? The view layer must always use the latest inventory snapshot from the service. Display must match the inventory service's confirmed stock. Failed inventory updates must rollback the order and clear stale values.",
+          "startFrame": 1188,
+          "endFrame": 1782
+        }
+      ]
+    },
+    {
+      "blockId": "performance_constraints",
+      "startFrame": 1782,
+      "endFrame": 2376,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "What are the Performance Constraints? The hotfix must deploy without slowing checkout. Diagnostics should avoid heavy instrumentation. The solution must preserve order confirmation SLA under 1 second.",
+          "startFrame": 1782,
+          "endFrame": 2376
+        }
+      ]
+    }
+  ],
+  "narration": {
+    "audioFile": "audio/case_overview.mp3",
+    "startFrame": 0,
+    "endFrame": 2379,
+    "durationSec": 79.312,
+    "wordTimings": [
+      {
+        "word": "What",
+        "startFrame": 2,
+        "endFrame": 9,
+        "durationFrames": 7
+      },
+      {
+        "word": "is",
+        "startFrame": 9,
+        "endFrame": 11,
+        "durationFrames": 3
+      },
+      {
+        "word": "the",
+        "startFrame": 11,
+        "endFrame": 16,
+        "durationFrames": 4
+      },
+      {
+        "word": "Problem",
+        "startFrame": 16,
+        "endFrame": 28,
+        "durationFrames": 12
+      },
+      {
+        "word": "Scenario",
+        "startFrame": 28,
+        "endFrame": 49,
+        "durationFrames": 21
+      },
+      {
+        "word": "?",
+        "startFrame": 49,
+        "endFrame": 51,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 59,
+        "endFrame": 63,
+        "durationFrames": 4
+      },
+      {
+        "word": "service",
+        "startFrame": 63,
+        "endFrame": 77,
+        "durationFrames": 15
+      },
+      {
+        "word": "emits",
+        "startFrame": 78,
+        "endFrame": 90,
+        "durationFrames": 12
+      },
+      {
+        "word": "a",
+        "startFrame": 91,
+        "endFrame": 95,
+        "durationFrames": 4
+      },
+      {
+        "word": "finalTotal",
+        "startFrame": 95,
+        "endFrame": 123,
+        "durationFrames": 28
+      },
+      {
+        "word": ",",
+        "startFrame": 126,
+        "endFrame": 134,
+        "durationFrames": 8
+      },
+      {
+        "word": "but",
+        "startFrame": 134,
+        "endFrame": 138,
+        "durationFrames": 5
+      },
+      {
+        "word": "the",
+        "startFrame": 138,
+        "endFrame": 141,
+        "durationFrames": 3
+      },
+      {
+        "word": "JSP",
+        "startFrame": 141,
+        "endFrame": 157,
+        "durationFrames": 15
+      },
+      {
+        "word": "sometimes",
+        "startFrame": 157,
+        "endFrame": 178,
+        "durationFrames": 21
+      },
+      {
+        "word": "recomputes",
+        "startFrame": 179,
+        "endFrame": 206,
+        "durationFrames": 26
+      },
+      {
+        "word": "a",
+        "startFrame": 206,
+        "endFrame": 210,
+        "durationFrames": 3
+      },
+      {
+        "word": "separate",
+        "startFrame": 210,
+        "endFrame": 227,
+        "durationFrames": 18
+      },
+      {
+        "word": "displayTotal",
+        "startFrame": 228,
+        "endFrame": 251,
+        "durationFrames": 23
+      },
+      {
+        "word": ".",
+        "startFrame": 251,
+        "endFrame": 254,
+        "durationFrames": 3
+      },
+      {
+        "word": "This",
+        "startFrame": 261,
+        "endFrame": 269,
+        "durationFrames": 8
+      },
+      {
+        "word": "recomputation",
+        "startFrame": 269,
+        "endFrame": 293,
+        "durationFrames": 24
+      },
+      {
+        "word": "combined",
+        "startFrame": 293,
+        "endFrame": 307,
+        "durationFrames": 14
+      },
+      {
+        "word": "with",
+        "startFrame": 307,
+        "endFrame": 313,
+        "durationFrames": 6
+      },
+      {
+        "word": "promo",
+        "startFrame": 313,
+        "endFrame": 323,
+        "durationFrames": 10
+      },
+      {
+        "word": "failures",
+        "startFrame": 323,
+        "endFrame": 344,
+        "durationFrames": 21
+      },
+      {
+        "word": "can",
+        "startFrame": 347,
+        "endFrame": 353,
+        "durationFrames": 6
+      },
+      {
+        "word": "leave",
+        "startFrame": 353,
+        "endFrame": 361,
+        "durationFrames": 8
+      },
+      {
+        "word": "stale",
+        "startFrame": 361,
+        "endFrame": 372,
+        "durationFrames": 10
+      },
+      {
+        "word": "discounts",
+        "startFrame": 372,
+        "endFrame": 392,
+        "durationFrames": 21
+      },
+      {
+        "word": "and",
+        "startFrame": 396,
+        "endFrame": 405,
+        "durationFrames": 9
+      },
+      {
+        "word": "create",
+        "startFrame": 405,
+        "endFrame": 417,
+        "durationFrames": 12
+      },
+      {
+        "word": "mismatched",
+        "startFrame": 418,
+        "endFrame": 436,
+        "durationFrames": 18
+      },
+      {
+        "word": "totals",
+        "startFrame": 436,
+        "endFrame": 455,
+        "durationFrames": 18
+      },
+      {
+        "word": ".",
+        "startFrame": 455,
+        "endFrame": 458,
+        "durationFrames": 3
+      },
+      {
+        "word": "This",
+        "startFrame": 465,
+        "endFrame": 473,
+        "durationFrames": 8
+      },
+      {
+        "word": "matters",
+        "startFrame": 473,
+        "endFrame": 486,
+        "durationFrames": 14
+      },
+      {
+        "word": "because",
+        "startFrame": 486,
+        "endFrame": 497,
+        "durationFrames": 10
+      },
+      {
+        "word": "customers",
+        "startFrame": 497,
+        "endFrame": 513,
+        "durationFrames": 16
+      },
+      {
+        "word": "see",
+        "startFrame": 513,
+        "endFrame": 523,
+        "durationFrames": 10
+      },
+      {
+        "word": "different",
+        "startFrame": 523,
+        "endFrame": 535,
+        "durationFrames": 12
+      },
+      {
+        "word": "totals",
+        "startFrame": 535,
+        "endFrame": 550,
+        "durationFrames": 16
+      },
+      {
+        "word": "in",
+        "startFrame": 552,
+        "endFrame": 556,
+        "durationFrames": 4
+      },
+      {
+        "word": "the",
+        "startFrame": 556,
+        "endFrame": 560,
+        "durationFrames": 4
+      },
+      {
+        "word": "page",
+        "startFrame": 560,
+        "endFrame": 575,
+        "durationFrames": 15
+      },
+      {
+        "word": "and",
+        "startFrame": 576,
+        "endFrame": 582,
+        "durationFrames": 7
+      },
+      {
+        "word": "email",
+        "startFrame": 583,
+        "endFrame": 600,
+        "durationFrames": 17
+      },
+      {
+        "word": ",",
+        "startFrame": 603,
+        "endFrame": 607,
+        "durationFrames": 4
+      },
+      {
+        "word": "breaking",
+        "startFrame": 607,
+        "endFrame": 621,
+        "durationFrames": 14
+      },
+      {
+        "word": "trust",
+        "startFrame": 621,
+        "endFrame": 636,
+        "durationFrames": 15
+      },
+      {
+        "word": ".",
+        "startFrame": 636,
+        "endFrame": 639,
+        "durationFrames": 3
+      },
+      {
+        "word": "Now",
+        "startFrame": 646,
+        "endFrame": 655,
+        "durationFrames": 9
+      },
+      {
+        "word": "let's",
+        "startFrame": 655,
+        "endFrame": 661,
+        "durationFrames": 6
+      },
+      {
+        "word": "understand",
+        "startFrame": 661,
+        "endFrame": 678,
+        "durationFrames": 17
+      },
+      {
+        "word": "the",
+        "startFrame": 678,
+        "endFrame": 682,
+        "durationFrames": 4
+      },
+      {
+        "word": "Data",
+        "startFrame": 682,
+        "endFrame": 694,
+        "durationFrames": 12
+      },
+      {
+        "word": "Simplified",
+        "startFrame": 694,
+        "endFrame": 720,
+        "durationFrames": 26
+      },
+      {
+        "word": ".",
+        "startFrame": 720,
+        "endFrame": 723,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 730,
+        "endFrame": 737,
+        "durationFrames": 7
+      },
+      {
+        "word": "payload",
+        "startFrame": 737,
+        "endFrame": 751,
+        "durationFrames": 14
+      },
+      {
+        "word": "includes",
+        "startFrame": 752,
+        "endFrame": 771,
+        "durationFrames": 20
+      },
+      {
+        "word": "baseTotal",
+        "startFrame": 771,
+        "endFrame": 796,
+        "durationFrames": 25
+      },
+      {
+        "word": ",",
+        "startFrame": 799,
+        "endFrame": 804,
+        "durationFrames": 5
+      },
+      {
+        "word": "discountAmount",
+        "startFrame": 804,
+        "endFrame": 833,
+        "durationFrames": 29
+      },
+      {
+        "word": ",",
+        "startFrame": 836,
+        "endFrame": 841,
+        "durationFrames": 5
+      },
+      {
+        "word": "and",
+        "startFrame": 841,
+        "endFrame": 849,
+        "durationFrames": 9
+      },
+      {
+        "word": "finalTotal",
+        "startFrame": 849,
+        "endFrame": 873,
+        "durationFrames": 23
+      },
+      {
+        "word": "from",
+        "startFrame": 873,
+        "endFrame": 879,
+        "durationFrames": 7
+      },
+      {
+        "word": "CheckoutService",
+        "startFrame": 879,
+        "endFrame": 913,
+        "durationFrames": 34
+      },
+      {
+        "word": ".",
+        "startFrame": 913,
+        "endFrame": 916,
+        "durationFrames": 3
+      },
+      {
+        "word": "CheckoutServlet",
+        "startFrame": 923,
+        "endFrame": 961,
+        "durationFrames": 38
+      },
+      {
+        "word": "orchestrates",
+        "startFrame": 963,
+        "endFrame": 985,
+        "durationFrames": 22
+      },
+      {
+        "word": "calls",
+        "startFrame": 985,
+        "endFrame": 1002,
+        "durationFrames": 16
+      },
+      {
+        "word": "and",
+        "startFrame": 1005,
+        "endFrame": 1013,
+        "durationFrames": 8
+      },
+      {
+        "word": "uses",
+        "startFrame": 1013,
+        "endFrame": 1027,
+        "durationFrames": 14
+      },
+      {
+        "word": "PricingUtil",
+        "startFrame": 1027,
+        "endFrame": 1050,
+        "durationFrames": 23
+      },
+      {
+        "word": "helper",
+        "startFrame": 1050,
+        "endFrame": 1062,
+        "durationFrames": 12
+      },
+      {
+        "word": "methods",
+        "startFrame": 1062,
+        "endFrame": 1080,
+        "durationFrames": 18
+      },
+      {
+        "word": "and",
+        "startFrame": 1082,
+        "endFrame": 1090,
+        "durationFrames": 8
+      },
+      {
+        "word": "custom",
+        "startFrame": 1090,
+        "endFrame": 1101,
+        "durationFrames": 12
+      },
+      {
+        "word": "tags",
+        "startFrame": 1101,
+        "endFrame": 1117,
+        "durationFrames": 16
+      },
+      {
+        "word": ".",
+        "startFrame": 1117,
+        "endFrame": 1120,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 1127,
+        "endFrame": 1132,
+        "durationFrames": 5
+      },
+      {
+        "word": "confirmation",
+        "startFrame": 1132,
+        "endFrame": 1153,
+        "durationFrames": 21
+      },
+      {
+        "word": "email",
+        "startFrame": 1154,
+        "endFrame": 1167,
+        "durationFrames": 14
+      },
+      {
+        "word": "binds",
+        "startFrame": 1167,
+        "endFrame": 1178,
+        "durationFrames": 11
+      },
+      {
+        "word": "to",
+        "startFrame": 1178,
+        "endFrame": 1185,
+        "durationFrames": 6
+      },
+      {
+        "word": "displayTotal",
+        "startFrame": 1185,
+        "endFrame": 1209,
+        "durationFrames": 24
+      },
+      {
+        "word": ",",
+        "startFrame": 1212,
+        "endFrame": 1218,
+        "durationFrames": 6
+      },
+      {
+        "word": "so",
+        "startFrame": 1218,
+        "endFrame": 1227,
+        "durationFrames": 10
+      },
+      {
+        "word": "any",
+        "startFrame": 1228,
+        "endFrame": 1236,
+        "durationFrames": 8
+      },
+      {
+        "word": "view",
+        "startFrame": 1236,
+        "endFrame": 1244,
+        "durationFrames": 8
+      },
+      {
+        "word": "recompute",
+        "startFrame": 1244,
+        "endFrame": 1264,
+        "durationFrames": 20
+      },
+      {
+        "word": "can",
+        "startFrame": 1264,
+        "endFrame": 1271,
+        "durationFrames": 8
+      },
+      {
+        "word": "change",
+        "startFrame": 1271,
+        "endFrame": 1286,
+        "durationFrames": 14
+      },
+      {
+        "word": "what",
+        "startFrame": 1287,
+        "endFrame": 1293,
+        "durationFrames": 7
+      },
+      {
+        "word": "the",
+        "startFrame": 1293,
+        "endFrame": 1296,
+        "durationFrames": 3
+      },
+      {
+        "word": "customer",
+        "startFrame": 1296,
+        "endFrame": 1311,
+        "durationFrames": 15
+      },
+      {
+        "word": "receives",
+        "startFrame": 1311,
+        "endFrame": 1330,
+        "durationFrames": 19
+      },
+      {
+        "word": ".",
+        "startFrame": 1330,
+        "endFrame": 1332,
+        "durationFrames": 3
+      },
+      {
+        "word": "What",
+        "startFrame": 1340,
+        "endFrame": 1346,
+        "durationFrames": 6
+      },
+      {
+        "word": "are",
+        "startFrame": 1346,
+        "endFrame": 1348,
+        "durationFrames": 2
+      },
+      {
+        "word": "the",
+        "startFrame": 1348,
+        "endFrame": 1352,
+        "durationFrames": 4
+      },
+      {
+        "word": "Business",
+        "startFrame": 1352,
+        "endFrame": 1366,
+        "durationFrames": 14
+      },
+      {
+        "word": "Rules",
+        "startFrame": 1366,
+        "endFrame": 1380,
+        "durationFrames": 14
+      },
+      {
+        "word": "?",
+        "startFrame": 1380,
+        "endFrame": 1382,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 1390,
+        "endFrame": 1394,
+        "durationFrames": 4
+      },
+      {
+        "word": "view",
+        "startFrame": 1394,
+        "endFrame": 1403,
+        "durationFrames": 9
+      },
+      {
+        "word": "layer",
+        "startFrame": 1403,
+        "endFrame": 1411,
+        "durationFrames": 8
+      },
+      {
+        "word": "must",
+        "startFrame": 1411,
+        "endFrame": 1422,
+        "durationFrames": 11
+      },
+      {
+        "word": "not",
+        "startFrame": 1422,
+        "endFrame": 1430,
+        "durationFrames": 8
+      },
+      {
+        "word": "recompute",
+        "startFrame": 1430,
+        "endFrame": 1445,
+        "durationFrames": 15
+      },
+      {
+        "word": "totals",
+        "startFrame": 1446,
+        "endFrame": 1464,
+        "durationFrames": 18
+      },
+      {
+        "word": "and",
+        "startFrame": 1468,
+        "endFrame": 1475,
+        "durationFrames": 8
+      },
+      {
+        "word": "should",
+        "startFrame": 1475,
+        "endFrame": 1481,
+        "durationFrames": 6
+      },
+      {
+        "word": "use",
+        "startFrame": 1481,
+        "endFrame": 1490,
+        "durationFrames": 9
+      },
+      {
+        "word": "the",
+        "startFrame": 1490,
+        "endFrame": 1492,
+        "durationFrames": 3
+      },
+      {
+        "word": "service",
+        "startFrame": 1492,
+        "endFrame": 1507,
+        "durationFrames": 14
+      },
+      {
+        "word": "finalTotal",
+        "startFrame": 1507,
+        "endFrame": 1530,
+        "durationFrames": 23
+      },
+      {
+        "word": "verbatim",
+        "startFrame": 1530,
+        "endFrame": 1549,
+        "durationFrames": 19
+      },
+      {
+        "word": ".",
+        "startFrame": 1549,
+        "endFrame": 1551,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 1559,
+        "endFrame": 1564,
+        "durationFrames": 5
+      },
+      {
+        "word": "display",
+        "startFrame": 1564,
+        "endFrame": 1579,
+        "durationFrames": 15
+      },
+      {
+        "word": "must",
+        "startFrame": 1579,
+        "endFrame": 1588,
+        "durationFrames": 9
+      },
+      {
+        "word": "exactly",
+        "startFrame": 1588,
+        "endFrame": 1607,
+        "durationFrames": 18
+      },
+      {
+        "word": "match",
+        "startFrame": 1607,
+        "endFrame": 1621,
+        "durationFrames": 14
+      },
+      {
+        "word": "CheckoutService.finalTotal",
+        "startFrame": 1623,
+        "endFrame": 1694,
+        "durationFrames": 70
+      },
+      {
+        "word": ".",
+        "startFrame": 1694,
+        "endFrame": 1696,
+        "durationFrames": 3
+      },
+      {
+        "word": "Promo",
+        "startFrame": 1704,
+        "endFrame": 1714,
+        "durationFrames": 10
+      },
+      {
+        "word": "failures",
+        "startFrame": 1714,
+        "endFrame": 1731,
+        "durationFrames": 18
+      },
+      {
+        "word": "must",
+        "startFrame": 1732,
+        "endFrame": 1744,
+        "durationFrames": 12
+      },
+      {
+        "word": "clear",
+        "startFrame": 1744,
+        "endFrame": 1752,
+        "durationFrames": 8
+      },
+      {
+        "word": "stale",
+        "startFrame": 1752,
+        "endFrame": 1762,
+        "durationFrames": 10
+      },
+      {
+        "word": "discount",
+        "startFrame": 1762,
+        "endFrame": 1775,
+        "durationFrames": 13
+      },
+      {
+        "word": "values",
+        "startFrame": 1775,
+        "endFrame": 1793,
+        "durationFrames": 18
+      },
+      {
+        "word": "so",
+        "startFrame": 1795,
+        "endFrame": 1805,
+        "durationFrames": 10
+      },
+      {
+        "word": "totals",
+        "startFrame": 1805,
+        "endFrame": 1822,
+        "durationFrames": 17
+      },
+      {
+        "word": "stay",
+        "startFrame": 1823,
+        "endFrame": 1833,
+        "durationFrames": 10
+      },
+      {
+        "word": "correct",
+        "startFrame": 1833,
+        "endFrame": 1850,
+        "durationFrames": 16
+      },
+      {
+        "word": ".",
+        "startFrame": 1850,
+        "endFrame": 1852,
+        "durationFrames": 3
+      },
+      {
+        "word": "What",
+        "startFrame": 1860,
+        "endFrame": 1867,
+        "durationFrames": 7
+      },
+      {
+        "word": "are",
+        "startFrame": 1867,
+        "endFrame": 1869,
+        "durationFrames": 3
+      },
+      {
+        "word": "the",
+        "startFrame": 1869,
+        "endFrame": 1873,
+        "durationFrames": 3
+      },
+      {
+        "word": "Performance",
+        "startFrame": 1873,
+        "endFrame": 1888,
+        "durationFrames": 15
+      },
+      {
+        "word": "Constraints",
+        "startFrame": 1888,
+        "endFrame": 1911,
+        "durationFrames": 23
+      },
+      {
+        "word": "?",
+        "startFrame": 1911,
+        "endFrame": 1914,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 1921,
+        "endFrame": 1926,
+        "durationFrames": 4
+      },
+      {
+        "word": "hotfix",
+        "startFrame": 1926,
+        "endFrame": 1941,
+        "durationFrames": 16
+      },
+      {
+        "word": "must",
+        "startFrame": 1941,
+        "endFrame": 1951,
+        "durationFrames": 9
+      },
+      {
+        "word": "deploy",
+        "startFrame": 1951,
+        "endFrame": 1970,
+        "durationFrames": 20
+      },
+      {
+        "word": "without",
+        "startFrame": 1972,
+        "endFrame": 1984,
+        "durationFrames": 12
+      },
+      {
+        "word": "breaking",
+        "startFrame": 1985,
+        "endFrame": 1997,
+        "durationFrames": 12
+      },
+      {
+        "word": "near-real-time",
+        "startFrame": 1997,
+        "endFrame": 2019,
+        "durationFrames": 22
+      },
+      {
+        "word": "checkout",
+        "startFrame": 2019,
+        "endFrame": 2036,
+        "durationFrames": 17
+      },
+      {
+        "word": ".",
+        "startFrame": 2036,
+        "endFrame": 2039,
+        "durationFrames": 3
+      },
+      {
+        "word": "Diagnostics",
+        "startFrame": 2046,
+        "endFrame": 2076,
+        "durationFrames": 29
+      },
+      {
+        "word": "should",
+        "startFrame": 2078,
+        "endFrame": 2086,
+        "durationFrames": 8
+      },
+      {
+        "word": "avoid",
+        "startFrame": 2086,
+        "endFrame": 2096,
+        "durationFrames": 10
+      },
+      {
+        "word": "heavy",
+        "startFrame": 2096,
+        "endFrame": 2110,
+        "durationFrames": 14
+      },
+      {
+        "word": "instrumentation",
+        "startFrame": 2110,
+        "endFrame": 2139,
+        "durationFrames": 29
+      },
+      {
+        "word": "in",
+        "startFrame": 2141,
+        "endFrame": 2146,
+        "durationFrames": 5
+      },
+      {
+        "word": "production",
+        "startFrame": 2146,
+        "endFrame": 2162,
+        "durationFrames": 16
+      },
+      {
+        "word": "request",
+        "startFrame": 2162,
+        "endFrame": 2175,
+        "durationFrames": 14
+      },
+      {
+        "word": "paths",
+        "startFrame": 2175,
+        "endFrame": 2191,
+        "durationFrames": 15
+      },
+      {
+        "word": ".",
+        "startFrame": 2191,
+        "endFrame": 2193,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 2201,
+        "endFrame": 2205,
+        "durationFrames": 4
+      },
+      {
+        "word": "solution",
+        "startFrame": 2205,
+        "endFrame": 2222,
+        "durationFrames": 17
+      },
+      {
+        "word": "must",
+        "startFrame": 2222,
+        "endFrame": 2231,
+        "durationFrames": 9
+      },
+      {
+        "word": "preserve",
+        "startFrame": 2231,
+        "endFrame": 2244,
+        "durationFrames": 13
+      },
+      {
+        "word": "the",
+        "startFrame": 2244,
+        "endFrame": 2248,
+        "durationFrames": 4
+      },
+      {
+        "word": "order",
+        "startFrame": 2248,
+        "endFrame": 2257,
+        "durationFrames": 9
+      },
+      {
+        "word": "confirmation",
+        "startFrame": 2257,
+        "endFrame": 2278,
+        "durationFrames": 21
+      },
+      {
+        "word": "SLA",
+        "startFrame": 2278,
+        "endFrame": 2298,
+        "durationFrames": 19
+      },
+      {
+        "word": ",",
+        "startFrame": 2300,
+        "endFrame": 2309,
+        "durationFrames": 9
+      },
+      {
+        "word": "keeping",
+        "startFrame": 2309,
+        "endFrame": 2321,
+        "durationFrames": 12
+      },
+      {
+        "word": "response",
+        "startFrame": 2320,
+        "endFrame": 2336,
+        "durationFrames": 15
+      },
+      {
+        "word": "below",
+        "startFrame": 2336,
+        "endFrame": 2349,
+        "durationFrames": 13
+      },
+      {
+        "word": "one",
+        "startFrame": 2349,
+        "endFrame": 2359,
+        "durationFrames": 10
+      },
+      {
+        "word": "second",
+        "startFrame": 2359,
+        "endFrame": 2377,
+        "durationFrames": 18
+      },
+      {
+        "word": ".",
+        "startFrame": 2377,
+        "endFrame": 2379,
+        "durationFrames": 3
+      }
+    ]
+  }
+}

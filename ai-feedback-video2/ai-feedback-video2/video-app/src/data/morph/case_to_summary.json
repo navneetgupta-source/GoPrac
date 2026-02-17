@@ -1,0 +1,67 @@
+{
+  "transitionId": "case_overview_to_question_summary",
+  "durationFrames": 25,
+  "easing": "easeInOut",
+  "elements": [
+    {
+      "elementId": "problem_scenario",
+      "fromBounds": {
+        "x": 60,
+        "y": 212,
+        "width": 914,
+        "height": 402
+      },
+      "toBounds": {
+        "x": 60,
+        "y": 212,
+        "width": 439,
+        "height": 190
+      }
+    },
+    {
+      "elementId": "data_simplified",
+      "fromBounds": {
+        "x": 60,
+        "y": 648,
+        "width": 914,
+        "height": 402
+      },
+      "toBounds": {
+        "x": 525,
+        "y": 212,
+        "width": 439,
+        "height": 190
+      }
+    },
+    {
+      "elementId": "business_rules",
+      "fromBounds": {
+        "x": 1006,
+        "y": 212,
+        "width": 914,
+        "height": 402
+      },
+      "toBounds": {
+        "x": 60,
+        "y": 428,
+        "width": 439,
+        "height": 190
+      }
+    },
+    {
+      "elementId": "performance_constraints",
+      "fromBounds": {
+        "x": 1006,
+        "y": 648,
+        "width": 914,
+        "height": 402
+      },
+      "toBounds": {
+        "x": 525,
+        "y": 428,
+        "width": 439,
+        "height": 190
+      }
+    }
+  ]
+}

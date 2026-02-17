@@ -1,0 +1,12 @@
+{
+  "case_overview": "./case_overview.json",
+  "case_overview_slide": "./case_overview_slide.json",
+  "intro_slide": "./intro_slide.json",
+  "intro_welcome": "./intro_welcome.json",
+  "q1_feedback": "./q1_feedback.json",
+  "q1_feedback_slide": "./q1_feedback_slide.json",
+  "q1_summary": "./q1_summary.json",
+  "q1_summary_slide": "./q1_summary_slide.json",
+  "q1_thinking": "./q1_thinking.json",
+  "q1_thinking_slide": "./q1_thinking_slide.json"
+}

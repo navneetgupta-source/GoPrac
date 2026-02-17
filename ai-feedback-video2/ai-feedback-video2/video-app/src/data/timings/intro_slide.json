@@ -1,0 +1,264 @@
+{
+  "slide_id": "intro_welcome",
+  "audio_file": "intro_welcome.mp3",
+  "total_duration_sec": 13.63,
+  "word_count": 41,
+  "words": [
+    {
+      "text": "Hey",
+      "start_sec": 0.049,
+      "end_sec": 0.478,
+      "duration_sec": 0.429
+    },
+    {
+      "text": ",",
+      "start_sec": 0.564,
+      "end_sec": 0.674,
+      "duration_sec": 0.11
+    },
+    {
+      "text": "Laukik",
+      "start_sec": 0.674,
+      "end_sec": 1.434,
+      "duration_sec": 0.76
+    },
+    {
+      "text": "!",
+      "start_sec": 1.434,
+      "end_sec": 1.52,
+      "duration_sec": 0.086
+    },
+    {
+      "text": "Welcome",
+      "start_sec": 1.765,
+      "end_sec": 2.206,
+      "duration_sec": 0.441
+    },
+    {
+      "text": "to",
+      "start_sec": 2.206,
+      "end_sec": 2.255,
+      "duration_sec": 0.049
+    },
+    {
+      "text": "your",
+      "start_sec": 2.255,
+      "end_sec": 2.414,
+      "duration_sec": 0.159
+    },
+    {
+      "text": "feedback",
+      "start_sec": 2.414,
+      "end_sec": 2.855,
+      "duration_sec": 0.441
+    },
+    {
+      "text": "session",
+      "start_sec": 2.855,
+      "end_sec": 3.358,
+      "duration_sec": 0.502
+    },
+    {
+      "text": "on",
+      "start_sec": 3.395,
+      "end_sec": 3.603,
+      "duration_sec": 0.208
+    },
+    {
+      "text": "Checkout",
+      "start_sec": 3.603,
+      "end_sec": 4.142,
+      "duration_sec": 0.539
+    },
+    {
+      "text": "Total",
+      "start_sec": 4.179,
+      "end_sec": 4.547,
+      "duration_sec": 0.368
+    },
+    {
+      "text": "Integrity",
+      "start_sec": 4.571,
+      "end_sec": 5.27,
+      "duration_sec": 0.699
+    },
+    {
+      "text": "Debugging",
+      "start_sec": 5.27,
+      "end_sec": 5.821,
+      "duration_sec": 0.551
+    },
+    {
+      "text": ".",
+      "start_sec": 5.821,
+      "end_sec": 5.907,
+      "duration_sec": 0.086
+    },
+    {
+      "text": "I’m",
+      "start_sec": 6.152,
+      "end_sec": 6.372,
+      "duration_sec": 0.221
+    },
+    {
+      "text": "so",
+      "start_sec": 6.373,
+      "end_sec": 6.703,
+      "duration_sec": 0.331
+    },
+    {
+      "text": "excited",
+      "start_sec": 6.703,
+      "end_sec": 7.243,
+      "duration_sec": 0.539
+    },
+    {
+      "text": "to",
+      "start_sec": 7.243,
+      "end_sec": 7.39,
+      "duration_sec": 0.147
+    },
+    {
+      "text": "dive",
+      "start_sec": 7.39,
+      "end_sec": 7.647,
+      "duration_sec": 0.257
+    },
+    {
+      "text": "into",
+      "start_sec": 7.647,
+      "end_sec": 7.831,
+      "duration_sec": 0.184
+    },
+    {
+      "text": "this",
+      "start_sec": 7.831,
+      "end_sec": 8.015,
+      "duration_sec": 0.184
+    },
+    {
+      "text": "with",
+      "start_sec": 8.015,
+      "end_sec": 8.162,
+      "duration_sec": 0.147
+    },
+    {
+      "text": "you",
+      "start_sec": 8.162,
+      "end_sec": 8.48,
+      "duration_sec": 0.319
+    },
+    {
+      "text": ".",
+      "start_sec": 8.48,
+      "end_sec": 8.566,
+      "duration_sec": 0.086
+    },
+    {
+      "text": "And",
+      "start_sec": 8.811,
+      "end_sec": 9.069,
+      "duration_sec": 0.257
+    },
+    {
+      "text": "honestly",
+      "start_sec": 9.093,
+      "end_sec": 9.718,
+      "duration_sec": 0.625
+    },
+    {
+      "text": "?",
+      "start_sec": 9.718,
+      "end_sec": 9.804,
+      "duration_sec": 0.086
+    },
+    {
+      "text": "There's",
+      "start_sec": 10.049,
+      "end_sec": 10.257,
+      "duration_sec": 0.208
+    },
+    {
+      "text": "some",
+      "start_sec": 10.257,
+      "end_sec": 10.49,
+      "duration_sec": 0.233
+    },
+    {
+      "text": "really",
+      "start_sec": 10.49,
+      "end_sec": 10.846,
+      "duration_sec": 0.355
+    },
+    {
+      "text": "cool",
+      "start_sec": 10.846,
+      "end_sec": 11.066,
+      "duration_sec": 0.221
+    },
+    {
+      "text": "stuff",
+      "start_sec": 11.066,
+      "end_sec": 11.36,
+      "duration_sec": 0.294
+    },
+    {
+      "text": "to",
+      "start_sec": 11.36,
+      "end_sec": 11.507,
+      "duration_sec": 0.147
+    },
+    {
+      "text": "talk",
+      "start_sec": 11.507,
+      "end_sec": 11.74,
+      "duration_sec": 0.233
+    },
+    {
+      "text": "about",
+      "start_sec": 11.74,
+      "end_sec": 12.145,
+      "duration_sec": 0.404
+    },
+    {
+      "text": ".",
+      "start_sec": 12.145,
+      "end_sec": 12.23,
+      "duration_sec": 0.086
+    },
+    {
+      "text": "Let’s",
+      "start_sec": 12.476,
+      "end_sec": 12.757,
+      "duration_sec": 0.282
+    },
+    {
+      "text": "get",
+      "start_sec": 12.757,
+      "end_sec": 12.941,
+      "duration_sec": 0.184
+    },
+    {
+      "text": "started",
+      "start_sec": 12.941,
+      "end_sec": 13.542,
+      "duration_sec": 0.601
+    },
+    {
+      "text": "!",
+      "start_sec": 13.542,
+      "end_sec": 13.627,
+      "duration_sec": 0.086
+    }
+  ],
+  "pause_markers": [
+    {
+      "position": 85,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 220,
+      "duration_sec": 1.5
+    }
+  ]
+}

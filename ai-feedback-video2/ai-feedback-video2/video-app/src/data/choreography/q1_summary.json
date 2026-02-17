@@ -1,0 +1,726 @@
+{
+  "slideType": "q1_summary",
+  "totalDurationFrames": 1217,
+  "actualDurationSec": 40.575,
+  "animations": [
+    {
+      "blockId": "question_block",
+      "type": "slideInRight",
+      "startFrame": 0,
+      "durationFrames": 35,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "feedback_block",
+      "type": "slideInRight",
+      "startFrame": 476,
+      "durationFrames": 35,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "score_badge",
+      "type": "scaleIn",
+      "startFrame": 795,
+      "durationFrames": 30,
+      "easing": "easeOut"
+    },
+    {
+      "blockId": "score_number",
+      "type": "counterAnimation",
+      "startFrame": 805,
+      "durationFrames": 40,
+      "easing": "linear"
+    }
+  ],
+  "highlights": [
+    {
+      "blockId": "question_block",
+      "startFrame": 0,
+      "endFrame": 466,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "Trace the inventory updates through OrderService, OrderServlet, helper tags, and JSP to pinpoint why stock levels mismatch.",
+          "startFrame": 0,
+          "endFrame": 466
+        }
+      ]
+    },
+    {
+      "blockId": "feedback_block",
+      "startFrame": 476,
+      "endFrame": 911,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "You suspected the JSP and view layer as the mismatch source. You stopped short of tracing OrderServlet conditionals that overwrite stock. You did not check helper tag stale reads or cite the no-stale-read rule.",
+          "startFrame": 476,
+          "endFrame": 911
+        }
+      ]
+    },
+    {
+      "blockId": "score_badge",
+      "startFrame": 810,
+      "endFrame": 1215,
+      "color": "#E6A100",
+      "segments": [
+        {
+          "text": "You scored 7.5 out of 10",
+          "startFrame": 810,
+          "endFrame": 1215
+        }
+      ]
+    }
+  ],
+  "narration": {
+    "audioFile": "audio/q1_summary.mp3",
+    "startFrame": 0,
+    "endFrame": 1217,
+    "durationSec": 40.575,
+    "wordTimings": [
+      {
+        "word": "What",
+        "startFrame": 2,
+        "endFrame": 8,
+        "durationFrames": 6
+      },
+      {
+        "word": "is",
+        "startFrame": 8,
+        "endFrame": 10,
+        "durationFrames": 3
+      },
+      {
+        "word": "the",
+        "startFrame": 10,
+        "endFrame": 15,
+        "durationFrames": 4
+      },
+      {
+        "word": "Question",
+        "startFrame": 15,
+        "endFrame": 27,
+        "durationFrames": 12
+      },
+      {
+        "word": "asking",
+        "startFrame": 27,
+        "endFrame": 41,
+        "durationFrames": 14
+      },
+      {
+        "word": "?",
+        "startFrame": 41,
+        "endFrame": 44,
+        "durationFrames": 3
+      },
+      {
+        "word": "The",
+        "startFrame": 51,
+        "endFrame": 56,
+        "durationFrames": 5
+      },
+      {
+        "word": "question",
+        "startFrame": 56,
+        "endFrame": 70,
+        "durationFrames": 14
+      },
+      {
+        "word": "asks",
+        "startFrame": 71,
+        "endFrame": 82,
+        "durationFrames": 12
+      },
+      {
+        "word": "you",
+        "startFrame": 82,
+        "endFrame": 88,
+        "durationFrames": 6
+      },
+      {
+        "word": "to",
+        "startFrame": 88,
+        "endFrame": 92,
+        "durationFrames": 4
+      },
+      {
+        "word": "trace",
+        "startFrame": 92,
+        "endFrame": 103,
+        "durationFrames": 10
+      },
+      {
+        "word": "the",
+        "startFrame": 103,
+        "endFrame": 106,
+        "durationFrames": 4
+      },
+      {
+        "word": "pricing",
+        "startFrame": 106,
+        "endFrame": 120,
+        "durationFrames": 14
+      },
+      {
+        "word": "total",
+        "startFrame": 121,
+        "endFrame": 131,
+        "durationFrames": 10
+      },
+      {
+        "word": "from",
+        "startFrame": 131,
+        "endFrame": 138,
+        "durationFrames": 7
+      },
+      {
+        "word": "CheckoutService",
+        "startFrame": 138,
+        "endFrame": 167,
+        "durationFrames": 29
+      },
+      {
+        "word": "through",
+        "startFrame": 171,
+        "endFrame": 179,
+        "durationFrames": 8
+      },
+      {
+        "word": "CheckoutServlet",
+        "startFrame": 179,
+        "endFrame": 214,
+        "durationFrames": 34
+      },
+      {
+        "word": ",",
+        "startFrame": 216,
+        "endFrame": 220,
+        "durationFrames": 4
+      },
+      {
+        "word": "helper",
+        "startFrame": 220,
+        "endFrame": 231,
+        "durationFrames": 11
+      },
+      {
+        "word": "tags",
+        "startFrame": 231,
+        "endFrame": 246,
+        "durationFrames": 15
+      },
+      {
+        "word": ",",
+        "startFrame": 249,
+        "endFrame": 256,
+        "durationFrames": 8
+      },
+      {
+        "word": "and",
+        "startFrame": 256,
+        "endFrame": 266,
+        "durationFrames": 10
+      },
+      {
+        "word": "JSP",
+        "startFrame": 266,
+        "endFrame": 287,
+        "durationFrames": 21
+      },
+      {
+        "word": "to",
+        "startFrame": 290,
+        "endFrame": 293,
+        "durationFrames": 3
+      },
+      {
+        "word": "find",
+        "startFrame": 293,
+        "endFrame": 304,
+        "durationFrames": 10
+      },
+      {
+        "word": "why",
+        "startFrame": 304,
+        "endFrame": 311,
+        "durationFrames": 7
+      },
+      {
+        "word": "email",
+        "startFrame": 312,
+        "endFrame": 328,
+        "durationFrames": 17
+      },
+      {
+        "word": "and",
+        "startFrame": 329,
+        "endFrame": 336,
+        "durationFrames": 7
+      },
+      {
+        "word": "page",
+        "startFrame": 336,
+        "endFrame": 346,
+        "durationFrames": 10
+      },
+      {
+        "word": "totals",
+        "startFrame": 346,
+        "endFrame": 357,
+        "durationFrames": 12
+      },
+      {
+        "word": "differ",
+        "startFrame": 357,
+        "endFrame": 370,
+        "durationFrames": 13
+      },
+      {
+        "word": ".",
+        "startFrame": 370,
+        "endFrame": 373,
+        "durationFrames": 3
+      },
+      {
+        "word": "You",
+        "startFrame": 380,
+        "endFrame": 386,
+        "durationFrames": 6
+      },
+      {
+        "word": "had",
+        "startFrame": 386,
+        "endFrame": 393,
+        "durationFrames": 6
+      },
+      {
+        "word": "to",
+        "startFrame": 393,
+        "endFrame": 395,
+        "durationFrames": 3
+      },
+      {
+        "word": "find",
+        "startFrame": 395,
+        "endFrame": 409,
+        "durationFrames": 14
+      },
+      {
+        "word": "where",
+        "startFrame": 410,
+        "endFrame": 416,
+        "durationFrames": 6
+      },
+      {
+        "word": "the",
+        "startFrame": 416,
+        "endFrame": 419,
+        "durationFrames": 3
+      },
+      {
+        "word": "price",
+        "startFrame": 419,
+        "endFrame": 429,
+        "durationFrames": 10
+      },
+      {
+        "word": "difference",
+        "startFrame": 429,
+        "endFrame": 442,
+        "durationFrames": 13
+      },
+      {
+        "word": "is",
+        "startFrame": 442,
+        "endFrame": 446,
+        "durationFrames": 3
+      },
+      {
+        "word": "coming",
+        "startFrame": 446,
+        "endFrame": 454,
+        "durationFrames": 9
+      },
+      {
+        "word": "from",
+        "startFrame": 454,
+        "endFrame": 466,
+        "durationFrames": 11
+      },
+      {
+        "word": ".",
+        "startFrame": 466,
+        "endFrame": 468,
+        "durationFrames": 3
+      },
+      {
+        "word": "Feedback",
+        "startFrame": 476,
+        "endFrame": 492,
+        "durationFrames": 16
+      },
+      {
+        "word": "Summary",
+        "startFrame": 492,
+        "endFrame": 510,
+        "durationFrames": 18
+      },
+      {
+        "word": ".",
+        "startFrame": 510,
+        "endFrame": 513,
+        "durationFrames": 3
+      },
+      {
+        "word": "You",
+        "startFrame": 520,
+        "endFrame": 526,
+        "durationFrames": 6
+      },
+      {
+        "word": "correctly",
+        "startFrame": 526,
+        "endFrame": 541,
+        "durationFrames": 15
+      },
+      {
+        "word": "suspected",
+        "startFrame": 541,
+        "endFrame": 559,
+        "durationFrames": 18
+      },
+      {
+        "word": "the",
+        "startFrame": 559,
+        "endFrame": 561,
+        "durationFrames": 2
+      },
+      {
+        "word": "view",
+        "startFrame": 561,
+        "endFrame": 570,
+        "durationFrames": 9
+      },
+      {
+        "word": "layer",
+        "startFrame": 570,
+        "endFrame": 583,
+        "durationFrames": 13
+      },
+      {
+        "word": "and",
+        "startFrame": 584,
+        "endFrame": 591,
+        "durationFrames": 7
+      },
+      {
+        "word": "JSP",
+        "startFrame": 591,
+        "endFrame": 612,
+        "durationFrames": 22
+      },
+      {
+        "word": "as",
+        "startFrame": 616,
+        "endFrame": 622,
+        "durationFrames": 6
+      },
+      {
+        "word": "a",
+        "startFrame": 622,
+        "endFrame": 623,
+        "durationFrames": 2
+      },
+      {
+        "word": "likely",
+        "startFrame": 623,
+        "endFrame": 637,
+        "durationFrames": 14
+      },
+      {
+        "word": "mismatch",
+        "startFrame": 637,
+        "endFrame": 654,
+        "durationFrames": 17
+      },
+      {
+        "word": "point",
+        "startFrame": 654,
+        "endFrame": 668,
+        "durationFrames": 14
+      },
+      {
+        "word": ".",
+        "startFrame": 668,
+        "endFrame": 671,
+        "durationFrames": 3
+      },
+      {
+        "word": "You",
+        "startFrame": 678,
+        "endFrame": 685,
+        "durationFrames": 6
+      },
+      {
+        "word": "missed",
+        "startFrame": 685,
+        "endFrame": 696,
+        "durationFrames": 11
+      },
+      {
+        "word": "tracing",
+        "startFrame": 696,
+        "endFrame": 713,
+        "durationFrames": 17
+      },
+      {
+        "word": "CheckoutServlet",
+        "startFrame": 714,
+        "endFrame": 747,
+        "durationFrames": 33
+      },
+      {
+        "word": "branches",
+        "startFrame": 747,
+        "endFrame": 768,
+        "durationFrames": 21
+      },
+      {
+        "word": "and",
+        "startFrame": 770,
+        "endFrame": 775,
+        "durationFrames": 6
+      },
+      {
+        "word": "helper",
+        "startFrame": 775,
+        "endFrame": 795,
+        "durationFrames": 20
+      },
+      {
+        "word": "tag",
+        "startFrame": 798,
+        "endFrame": 810,
+        "durationFrames": 11
+      },
+      {
+        "word": "recomputations",
+        "startFrame": 810,
+        "endFrame": 842,
+        "durationFrames": 32
+      },
+      {
+        "word": "that",
+        "startFrame": 846,
+        "endFrame": 853,
+        "durationFrames": 8
+      },
+      {
+        "word": "can",
+        "startFrame": 853,
+        "endFrame": 860,
+        "durationFrames": 6
+      },
+      {
+        "word": "overwrite",
+        "startFrame": 860,
+        "endFrame": 878,
+        "durationFrames": 18
+      },
+      {
+        "word": "displayTotal",
+        "startFrame": 878,
+        "endFrame": 901,
+        "durationFrames": 22
+      },
+      {
+        "word": ".",
+        "startFrame": 901,
+        "endFrame": 903,
+        "durationFrames": 3
+      },
+      {
+        "word": "So",
+        "startFrame": 911,
+        "endFrame": 917,
+        "durationFrames": 6
+      },
+      {
+        "word": "you",
+        "startFrame": 917,
+        "endFrame": 922,
+        "durationFrames": 5
+      },
+      {
+        "word": "started",
+        "startFrame": 922,
+        "endFrame": 935,
+        "durationFrames": 13
+      },
+      {
+        "word": "in",
+        "startFrame": 935,
+        "endFrame": 938,
+        "durationFrames": 3
+      },
+      {
+        "word": "the",
+        "startFrame": 938,
+        "endFrame": 941,
+        "durationFrames": 4
+      },
+      {
+        "word": "right",
+        "startFrame": 941,
+        "endFrame": 949,
+        "durationFrames": 8
+      },
+      {
+        "word": "direction",
+        "startFrame": 949,
+        "endFrame": 967,
+        "durationFrames": 18
+      },
+      {
+        "word": ",",
+        "startFrame": 969,
+        "endFrame": 976,
+        "durationFrames": 7
+      },
+      {
+        "word": "but",
+        "startFrame": 976,
+        "endFrame": 981,
+        "durationFrames": 5
+      },
+      {
+        "word": "did",
+        "startFrame": 981,
+        "endFrame": 985,
+        "durationFrames": 4
+      },
+      {
+        "word": "not",
+        "startFrame": 985,
+        "endFrame": 992,
+        "durationFrames": 7
+      },
+      {
+        "word": "complete",
+        "startFrame": 992,
+        "endFrame": 1004,
+        "durationFrames": 12
+      },
+      {
+        "word": "the",
+        "startFrame": 1004,
+        "endFrame": 1007,
+        "durationFrames": 3
+      },
+      {
+        "word": "full",
+        "startFrame": 1007,
+        "endFrame": 1016,
+        "durationFrames": 8
+      },
+      {
+        "word": "tracing",
+        "startFrame": 1016,
+        "endFrame": 1031,
+        "durationFrames": 16
+      },
+      {
+        "word": ".",
+        "startFrame": 1031,
+        "endFrame": 1034,
+        "durationFrames": 3
+      },
+      {
+        "word": "You",
+        "startFrame": 1041,
+        "endFrame": 1048,
+        "durationFrames": 6
+      },
+      {
+        "word": "scored",
+        "startFrame": 1048,
+        "endFrame": 1062,
+        "durationFrames": 14
+      },
+      {
+        "word": "6.5",
+        "startFrame": 1065,
+        "endFrame": 1096,
+        "durationFrames": 32
+      },
+      {
+        "word": "out",
+        "startFrame": 1096,
+        "endFrame": 1101,
+        "durationFrames": 5
+      },
+      {
+        "word": "of",
+        "startFrame": 1101,
+        "endFrame": 1104,
+        "durationFrames": 3
+      },
+      {
+        "word": "10",
+        "startFrame": 1104,
+        "endFrame": 1116,
+        "durationFrames": 12
+      },
+      {
+        "word": ".",
+        "startFrame": 1116,
+        "endFrame": 1119,
+        "durationFrames": 3
+      },
+      {
+        "word": "You",
+        "startFrame": 1126,
+        "endFrame": 1134,
+        "durationFrames": 8
+      },
+      {
+        "word": "currently",
+        "startFrame": 1134,
+        "endFrame": 1150,
+        "durationFrames": 16
+      },
+      {
+        "word": "stand",
+        "startFrame": 1150,
+        "endFrame": 1163,
+        "durationFrames": 13
+      },
+      {
+        "word": "Below",
+        "startFrame": 1163,
+        "endFrame": 1176,
+        "durationFrames": 13
+      },
+      {
+        "word": "Industry",
+        "startFrame": 1176,
+        "endFrame": 1194,
+        "durationFrames": 18
+      },
+      {
+        "word": "Standards",
+        "startFrame": 1194,
+        "endFrame": 1215,
+        "durationFrames": 21
+      },
+      {
+        "word": ".",
+        "startFrame": 1215,
+        "endFrame": 1217,
+        "durationFrames": 3
+      }
+    ]
+  }
+}

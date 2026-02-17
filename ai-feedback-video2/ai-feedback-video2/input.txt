@@ -1,0 +1,119 @@
+{
+  "slides": {
+    "intro": {
+      "visual": {
+        "headline": "Order Processing Failure Debugging",
+        "cta_text": "Let's Start Your Feedback"
+      },
+      "narration": "Hi Raj, I am GoPrac's AI Coach. Let's walk through your feedback on the Order Processing Failure Debugging problem."
+    },
+    "case_overview": {
+      "visual": {
+        "problem_scenario": {
+          "key_points": [
+            "OrderService emits finalStock for each order.",
+            "JSP sometimes reads stale inventory data.",
+            "Inventory failures can leave incorrect stock values."
+          ]
+        },
+        "data": {
+          "key_points": [
+            "Payload includes order details, inventory updates, confirmation status.",
+            "OrderServlet calls InventoryHelper and custom tags.",
+            "Confirmation email binds to displayStock value."
+          ]
+        },
+        "business_rules": {
+          "key_points": [
+            "View layer must use latest inventory snapshot from service.",
+            "Display must match inventory service's confirmed stock.",
+            "Failed inventory updates must rollback and clear stale values."
+          ]
+        },
+        "performance_constraints": {
+          "key_points": [
+            "Hotfix must deploy without slowing checkout.",
+            "Diagnostics should avoid heavy instrumentation.",
+            "Order confirmation SLA must stay under one second."
+          ]
+        }
+      },
+      "narration": {
+        "problem_scenario": "What is the Problem Scenario? The order processing service sometimes fails to update inventory correctly, leading to overselling. The JSP displays available stock based on a separate query that may be stale. This matters because customers see incorrect stock levels and orders get cancelled.",
+        "data": "Now let's understand the Data Simplified. The payload includes order details, inventory updates, and confirmation status. OrderServlet orchestrates calls and uses InventoryHelper methods and custom tags. The confirmation email binds to displayStock, so any stale read can mislead customers.",
+        "business_rules": "What are the Business Rules? The view layer must always use the latest inventory snapshot from the service. Display must match the inventory service's confirmed stock. Failed inventory updates must rollback the order and clear stale values.",
+        "performance_constraints": "What are the Performance Constraints? The hotfix must deploy without slowing checkout. Diagnostics should avoid heavy instrumentation. The solution must preserve order confirmation SLA under 1 second."
+      }
+    },
+    "q1_summary": {
+      "visual": {
+        "question_block": {
+          "topic": "Trace Variable Flows",
+          "question_text": "Trace the inventory updates through OrderService, OrderServlet, helper tags, and JSP to pinpoint why stock levels mismatch."
+        },
+        "feedback_summary_block": {
+          "title": "YOUR APPROACH:",
+          "points": [
+            "You suspected the JSP and view layer as the mismatch source.",
+            "You stopped short of tracing OrderServlet conditionals that overwrite stock.",
+            "You did not check helper tag stale reads or cite the no-stale-read rule."
+          ]
+        },
+        "score_block": {
+          "score": 7.5,
+          "score_text": "Meets Industry Standards"
+        }
+      },
+      "narration": {
+        "question": "What is the Question asking? The question asks you to trace inventory updates from OrderService through OrderServlet, helper tags, and JSP to find why stock levels mismatch. You had to find where the inconsistency originates.",
+        "feedback": "Feedback Summary. You correctly suspected the view layer and JSP as a likely mismatch point. You missed tracing OrderServlet branches and helper tag recomputations that can overwrite displayStock. So you started in the right direction, but did not complete the full tracing.",
+        "score": "You scored 7.5 out of 10. You currently stand Meets Industry Standards."
+      }
+    },
+    "feedback_blocks": {
+      "visual": {
+        "what_went_right": [
+          "You clearly pinpointed the mismatch region between OrderService and the JSP view layer.",
+          "You noted that inventory queries remained stale after failed updates in some cases.",
+          "You recognized that helper logic could recalculate stock incorrectly in the JSP."
+        ],
+        "what_went_wrong": [
+          "You skipped tracing OrderServlet branches that can overwrite displayStock during request handling.",
+          "You did not check InventoryHelper or tag helpers for stale reads.",
+          "You left out mentioning the no-stale-read business rule explicitly in your notes."
+        ]
+      },
+      "narration": {
+        "what_went_right": "Let's start with what you did right. First, you clearly pinpointed the mismatch region between OrderService and the JSP view layer. Second, you noted that inventory queries remained stale after failed updates in some cases. Third, you recognized that helper logic could recalculate stock incorrectly in the JSP. These are solid observations and show good initial focus.",
+        "what_went_wrong": "Now let's see What went wrong. One, you skipped tracing OrderServlet branches that can overwrite displayStock during request handling. Two, you did not check InventoryHelper or tag helpers for stale reads. Three, you left out mentioning the no-stale-read business rule explicitly in your notes. Lets break down the mistakes in next slide."
+      }
+    },
+    "thinking_steps": {
+      "visual": {
+        "rows": [
+          {
+            "step": "Locate mismatch",
+            "how_you_thought": "You identified the OrderService vs JSP mismatch, but you did not document intermediate overwrites.",
+            "thinking_advice": "Trace finalStock from service to JSP and ensure no stale reads."
+          },
+          {
+            "step": "Validate rules",
+            "how_you_thought": "You mentioned recomputation risk, but you did not cite the specific rule or helper tag.",
+            "thinking_advice": "Confirm the no-stale-read rule and test helper tags for compliance."
+          },
+          {
+            "step": "Inspect fallbacks",
+            "how_you_thought": "You raised the stale inventory idea, but you skipped checking servlet-level fallbacks.",
+            "thinking_advice": "Inspect servlet conditionals and stale inventory state on update failures."
+          }
+        ],
+        "concepts_to_review": [
+          "Variable Tracing",
+          "Business Rule Validation",
+          "Fallback Logic"
+        ]
+      },
+      "narration": "Lets analyze your thinking process step by step. Step one is Locate mismatch, where you should trace finalStock from OrderService through OrderServlet to the JSP and confirm no stale reads happen. Step two is Validate rules, where you should restate the no-stale-read rule and test helper tags for compliance. Step three is Inspect fallbacks, where you should check OrderServlet conditional overwrites and stale inventory state when updates fail. Now lets see How You Thought. For Locate mismatch, you identified the OrderService vs JSP mismatch, but you did not document intermediate overwrites. My advice is that you should trace finalStock from service to JSP and ensure no stale reads. For Validate rules, you mentioned recomputation risk, but you did not cite the specific rule or helper tag. My advice is that you should confirm the no-stale-read rule and test helper tags for compliance. For Inspect fallbacks, you raised the stale inventory idea, but you skipped checking servlet-level fallbacks. My advice is that you should inspect servlet conditionals and stale inventory state on update failures. I would also advice you to go through the concepts of: Variable Tracing, Business Rule Validation, and Fallback Logic."
+    }
+  }
+}

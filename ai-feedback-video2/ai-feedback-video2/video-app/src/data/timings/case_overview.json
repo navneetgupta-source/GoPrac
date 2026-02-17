@@ -1,0 +1,1092 @@
+{
+  "audio_file": "audio/case_overview.mp3",
+  "duration_sec": 79.312,
+  "words": [
+    {
+      "text": "What",
+      "start_sec": 0.05,
+      "end_sec": 0.2875,
+      "duration_sec": 0.2375
+    },
+    {
+      "text": "is",
+      "start_sec": 0.2875,
+      "end_sec": 0.375,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "the",
+      "start_sec": 0.375,
+      "end_sec": 0.525,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "Problem",
+      "start_sec": 0.525,
+      "end_sec": 0.9375,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "Scenario",
+      "start_sec": 0.9375,
+      "end_sec": 1.625,
+      "duration_sec": 0.6875
+    },
+    {
+      "text": "?",
+      "start_sec": 1.625,
+      "end_sec": 1.7125,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 1.9625,
+      "end_sec": 2.0875,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "service",
+      "start_sec": 2.0875,
+      "end_sec": 2.5749999999999997,
+      "duration_sec": 0.4875
+    },
+    {
+      "text": "emits",
+      "start_sec": 2.6,
+      "end_sec": 3.0125,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "a",
+      "start_sec": 3.0375,
+      "end_sec": 3.1750000000000003,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 3.175,
+      "end_sec": 4.1125,
+      "duration_sec": 0.9375
+    },
+    {
+      "text": ",",
+      "start_sec": 4.2,
+      "end_sec": 4.45,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "but",
+      "start_sec": 4.45,
+      "end_sec": 4.6125,
+      "duration_sec": 0.1625
+    },
+    {
+      "text": "the",
+      "start_sec": 4.6125,
+      "end_sec": 4.7124999999999995,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "JSP",
+      "start_sec": 4.7125,
+      "end_sec": 5.2250000000000005,
+      "duration_sec": 0.5125
+    },
+    {
+      "text": "sometimes",
+      "start_sec": 5.225,
+      "end_sec": 5.9375,
+      "duration_sec": 0.7125
+    },
+    {
+      "text": "recomputes",
+      "start_sec": 5.975,
+      "end_sec": 6.85,
+      "duration_sec": 0.875
+    },
+    {
+      "text": "a",
+      "start_sec": 6.875,
+      "end_sec": 6.9875,
+      "duration_sec": 0.1125
+    },
+    {
+      "text": "separate",
+      "start_sec": 6.9875,
+      "end_sec": 7.575,
+      "duration_sec": 0.5875
+    },
+    {
+      "text": "displayTotal",
+      "start_sec": 7.5875,
+      "end_sec": 8.3625,
+      "duration_sec": 0.775
+    },
+    {
+      "text": ".",
+      "start_sec": 8.3625,
+      "end_sec": 8.450000000000001,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "This",
+      "start_sec": 8.7,
+      "end_sec": 8.975,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "recomputation",
+      "start_sec": 8.975,
+      "end_sec": 9.775,
+      "duration_sec": 0.8
+    },
+    {
+      "text": "combined",
+      "start_sec": 9.775,
+      "end_sec": 10.2375,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "with",
+      "start_sec": 10.2375,
+      "end_sec": 10.425,
+      "duration_sec": 0.1875
+    },
+    {
+      "text": "promo",
+      "start_sec": 10.425,
+      "end_sec": 10.775,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "failures",
+      "start_sec": 10.775,
+      "end_sec": 11.4625,
+      "duration_sec": 0.6875
+    },
+    {
+      "text": "can",
+      "start_sec": 11.575,
+      "end_sec": 11.774999999999999,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "leave",
+      "start_sec": 11.775,
+      "end_sec": 12.0375,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "stale",
+      "start_sec": 12.0375,
+      "end_sec": 12.3875,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "discounts",
+      "start_sec": 12.3875,
+      "end_sec": 13.075,
+      "duration_sec": 0.6875
+    },
+    {
+      "text": "and",
+      "start_sec": 13.2,
+      "end_sec": 13.5125,
+      "duration_sec": 0.3125
+    },
+    {
+      "text": "create",
+      "start_sec": 13.5125,
+      "end_sec": 13.9125,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "mismatched",
+      "start_sec": 13.9375,
+      "end_sec": 14.55,
+      "duration_sec": 0.6125
+    },
+    {
+      "text": "totals",
+      "start_sec": 14.55,
+      "end_sec": 15.162500000000001,
+      "duration_sec": 0.6125
+    },
+    {
+      "text": ".",
+      "start_sec": 15.1625,
+      "end_sec": 15.25,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "This",
+      "start_sec": 15.5,
+      "end_sec": 15.7625,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "matters",
+      "start_sec": 15.7625,
+      "end_sec": 16.2125,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "because",
+      "start_sec": 16.2125,
+      "end_sec": 16.5625,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "customers",
+      "start_sec": 16.5625,
+      "end_sec": 17.0875,
+      "duration_sec": 0.525
+    },
+    {
+      "text": "see",
+      "start_sec": 17.0875,
+      "end_sec": 17.424999999999997,
+      "duration_sec": 0.3375
+    },
+    {
+      "text": "different",
+      "start_sec": 17.425,
+      "end_sec": 17.825,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "totals",
+      "start_sec": 17.825,
+      "end_sec": 18.349999999999998,
+      "duration_sec": 0.525
+    },
+    {
+      "text": "in",
+      "start_sec": 18.3875,
+      "end_sec": 18.525,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "the",
+      "start_sec": 18.525,
+      "end_sec": 18.662499999999998,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "page",
+      "start_sec": 18.6625,
+      "end_sec": 19.1625,
+      "duration_sec": 0.5
+    },
+    {
+      "text": "and",
+      "start_sec": 19.1875,
+      "end_sec": 19.4125,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "email",
+      "start_sec": 19.4375,
+      "end_sec": 20.0125,
+      "duration_sec": 0.575
+    },
+    {
+      "text": ",",
+      "start_sec": 20.1,
+      "end_sec": 20.2375,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "breaking",
+      "start_sec": 20.2375,
+      "end_sec": 20.712500000000002,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "trust",
+      "start_sec": 20.7125,
+      "end_sec": 21.2125,
+      "duration_sec": 0.5
+    },
+    {
+      "text": ".",
+      "start_sec": 21.2125,
+      "end_sec": 21.299999999999997,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Now",
+      "start_sec": 21.55,
+      "end_sec": 21.837500000000002,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "let's",
+      "start_sec": 21.8375,
+      "end_sec": 22.037499999999998,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "understand",
+      "start_sec": 22.0375,
+      "end_sec": 22.6,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": "the",
+      "start_sec": 22.6,
+      "end_sec": 22.75,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "Data",
+      "start_sec": 22.75,
+      "end_sec": 23.1375,
+      "duration_sec": 0.3875
+    },
+    {
+      "text": "Simplified",
+      "start_sec": 23.1375,
+      "end_sec": 24.0125,
+      "duration_sec": 0.875
+    },
+    {
+      "text": ".",
+      "start_sec": 24.0125,
+      "end_sec": 24.099999999999998,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 24.35,
+      "end_sec": 24.575000000000003,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "payload",
+      "start_sec": 24.575,
+      "end_sec": 25.037499999999998,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "includes",
+      "start_sec": 25.05,
+      "end_sec": 25.7,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "baseTotal",
+      "start_sec": 25.7125,
+      "end_sec": 26.549999999999997,
+      "duration_sec": 0.8375
+    },
+    {
+      "text": ",",
+      "start_sec": 26.6375,
+      "end_sec": 26.8125,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "discountAmount",
+      "start_sec": 26.8125,
+      "end_sec": 27.775,
+      "duration_sec": 0.9625
+    },
+    {
+      "text": ",",
+      "start_sec": 27.8625,
+      "end_sec": 28.025000000000002,
+      "duration_sec": 0.1625
+    },
+    {
+      "text": "and",
+      "start_sec": 28.025,
+      "end_sec": 28.3125,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 28.3125,
+      "end_sec": 29.0875,
+      "duration_sec": 0.775
+    },
+    {
+      "text": "from",
+      "start_sec": 29.0875,
+      "end_sec": 29.3125,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "CheckoutService",
+      "start_sec": 29.3125,
+      "end_sec": 30.4375,
+      "duration_sec": 1.125
+    },
+    {
+      "text": ".",
+      "start_sec": 30.4375,
+      "end_sec": 30.525,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "CheckoutServlet",
+      "start_sec": 30.775,
+      "end_sec": 32.0375,
+      "duration_sec": 1.2625
+    },
+    {
+      "text": "orchestrates",
+      "start_sec": 32.1125,
+      "end_sec": 32.8375,
+      "duration_sec": 0.725
+    },
+    {
+      "text": "calls",
+      "start_sec": 32.8375,
+      "end_sec": 33.387499999999996,
+      "duration_sec": 0.55
+    },
+    {
+      "text": "and",
+      "start_sec": 33.5125,
+      "end_sec": 33.7625,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "uses",
+      "start_sec": 33.7625,
+      "end_sec": 34.225,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "PricingUtil",
+      "start_sec": 34.225,
+      "end_sec": 34.987500000000004,
+      "duration_sec": 0.7625
+    },
+    {
+      "text": "helper",
+      "start_sec": 34.9875,
+      "end_sec": 35.4,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "methods",
+      "start_sec": 35.4,
+      "end_sec": 36.0,
+      "duration_sec": 0.6
+    },
+    {
+      "text": "and",
+      "start_sec": 36.05,
+      "end_sec": 36.324999999999996,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "custom",
+      "start_sec": 36.325,
+      "end_sec": 36.712500000000006,
+      "duration_sec": 0.3875
+    },
+    {
+      "text": "tags",
+      "start_sec": 36.7125,
+      "end_sec": 37.2375,
+      "duration_sec": 0.525
+    },
+    {
+      "text": ".",
+      "start_sec": 37.2375,
+      "end_sec": 37.324999999999996,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 37.575,
+      "end_sec": 37.737500000000004,
+      "duration_sec": 0.1625
+    },
+    {
+      "text": "confirmation",
+      "start_sec": 37.7375,
+      "end_sec": 38.425,
+      "duration_sec": 0.6875
+    },
+    {
+      "text": "email",
+      "start_sec": 38.45,
+      "end_sec": 38.9125,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "binds",
+      "start_sec": 38.9125,
+      "end_sec": 39.275,
+      "duration_sec": 0.3625
+    },
+    {
+      "text": "to",
+      "start_sec": 39.275,
+      "end_sec": 39.4875,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "displayTotal",
+      "start_sec": 39.4875,
+      "end_sec": 40.3,
+      "duration_sec": 0.8125
+    },
+    {
+      "text": ",",
+      "start_sec": 40.3875,
+      "end_sec": 40.587500000000006,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "so",
+      "start_sec": 40.5875,
+      "end_sec": 40.9125,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "any",
+      "start_sec": 40.925,
+      "end_sec": 41.199999999999996,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "view",
+      "start_sec": 41.2,
+      "end_sec": 41.462500000000006,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "recompute",
+      "start_sec": 41.4625,
+      "end_sec": 42.125,
+      "duration_sec": 0.6625
+    },
+    {
+      "text": "can",
+      "start_sec": 42.125,
+      "end_sec": 42.375,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "change",
+      "start_sec": 42.375,
+      "end_sec": 42.85,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "what",
+      "start_sec": 42.8875,
+      "end_sec": 43.112500000000004,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "the",
+      "start_sec": 43.1125,
+      "end_sec": 43.2125,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "customer",
+      "start_sec": 43.2125,
+      "end_sec": 43.699999999999996,
+      "duration_sec": 0.4875
+    },
+    {
+      "text": "receives",
+      "start_sec": 43.7,
+      "end_sec": 44.325,
+      "duration_sec": 0.625
+    },
+    {
+      "text": ".",
+      "start_sec": 44.325,
+      "end_sec": 44.4125,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "What",
+      "start_sec": 44.6625,
+      "end_sec": 44.862500000000004,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "are",
+      "start_sec": 44.8625,
+      "end_sec": 44.9375,
+      "duration_sec": 0.075
+    },
+    {
+      "text": "the",
+      "start_sec": 44.9375,
+      "end_sec": 45.075,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "Business",
+      "start_sec": 45.075,
+      "end_sec": 45.525000000000006,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "Rules",
+      "start_sec": 45.525,
+      "end_sec": 45.9875,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "?",
+      "start_sec": 45.9875,
+      "end_sec": 46.074999999999996,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 46.325,
+      "end_sec": 46.475,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "view",
+      "start_sec": 46.475,
+      "end_sec": 46.7625,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "layer",
+      "start_sec": 46.7625,
+      "end_sec": 47.0375,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "must",
+      "start_sec": 47.0375,
+      "end_sec": 47.4,
+      "duration_sec": 0.3625
+    },
+    {
+      "text": "not",
+      "start_sec": 47.4,
+      "end_sec": 47.6625,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "recompute",
+      "start_sec": 47.6625,
+      "end_sec": 48.175000000000004,
+      "duration_sec": 0.5125
+    },
+    {
+      "text": "totals",
+      "start_sec": 48.1875,
+      "end_sec": 48.7875,
+      "duration_sec": 0.6
+    },
+    {
+      "text": "and",
+      "start_sec": 48.925,
+      "end_sec": 49.175,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "should",
+      "start_sec": 49.175,
+      "end_sec": 49.3625,
+      "duration_sec": 0.1875
+    },
+    {
+      "text": "use",
+      "start_sec": 49.3625,
+      "end_sec": 49.65,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "the",
+      "start_sec": 49.65,
+      "end_sec": 49.75,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "service",
+      "start_sec": 49.75,
+      "end_sec": 50.225,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 50.225,
+      "end_sec": 50.987500000000004,
+      "duration_sec": 0.7625
+    },
+    {
+      "text": "verbatim",
+      "start_sec": 50.9875,
+      "end_sec": 51.625,
+      "duration_sec": 0.6375
+    },
+    {
+      "text": ".",
+      "start_sec": 51.625,
+      "end_sec": 51.7125,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 51.9625,
+      "end_sec": 52.137499999999996,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "display",
+      "start_sec": 52.1375,
+      "end_sec": 52.625,
+      "duration_sec": 0.4875
+    },
+    {
+      "text": "must",
+      "start_sec": 52.625,
+      "end_sec": 52.925,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "exactly",
+      "start_sec": 52.95,
+      "end_sec": 53.5625,
+      "duration_sec": 0.6125
+    },
+    {
+      "text": "match",
+      "start_sec": 53.5625,
+      "end_sec": 54.0375,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "CheckoutService.finalTotal",
+      "start_sec": 54.1,
+      "end_sec": 56.45,
+      "duration_sec": 2.35
+    },
+    {
+      "text": ".",
+      "start_sec": 56.45,
+      "end_sec": 56.5375,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Promo",
+      "start_sec": 56.7875,
+      "end_sec": 57.125,
+      "duration_sec": 0.3375
+    },
+    {
+      "text": "failures",
+      "start_sec": 57.125,
+      "end_sec": 57.7125,
+      "duration_sec": 0.5875
+    },
+    {
+      "text": "must",
+      "start_sec": 57.725,
+      "end_sec": 58.1375,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "clear",
+      "start_sec": 58.1375,
+      "end_sec": 58.400000000000006,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "stale",
+      "start_sec": 58.4,
+      "end_sec": 58.7375,
+      "duration_sec": 0.3375
+    },
+    {
+      "text": "discount",
+      "start_sec": 58.7375,
+      "end_sec": 59.162499999999994,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "values",
+      "start_sec": 59.1625,
+      "end_sec": 59.775,
+      "duration_sec": 0.6125
+    },
+    {
+      "text": "so",
+      "start_sec": 59.825,
+      "end_sec": 60.1625,
+      "duration_sec": 0.3375
+    },
+    {
+      "text": "totals",
+      "start_sec": 60.1625,
+      "end_sec": 60.725,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": "stay",
+      "start_sec": 60.7625,
+      "end_sec": 61.112500000000004,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "correct",
+      "start_sec": 61.1125,
+      "end_sec": 61.662499999999994,
+      "duration_sec": 0.55
+    },
+    {
+      "text": ".",
+      "start_sec": 61.6625,
+      "end_sec": 61.75,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "What",
+      "start_sec": 62.0,
+      "end_sec": 62.225,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "are",
+      "start_sec": 62.225,
+      "end_sec": 62.3125,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "the",
+      "start_sec": 62.3125,
+      "end_sec": 62.425,
+      "duration_sec": 0.1125
+    },
+    {
+      "text": "Performance",
+      "start_sec": 62.425,
+      "end_sec": 62.925,
+      "duration_sec": 0.5
+    },
+    {
+      "text": "Constraints",
+      "start_sec": 62.925,
+      "end_sec": 63.699999999999996,
+      "duration_sec": 0.775
+    },
+    {
+      "text": "?",
+      "start_sec": 63.7,
+      "end_sec": 63.7875,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 64.0375,
+      "end_sec": 64.1875,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "hotfix",
+      "start_sec": 64.1875,
+      "end_sec": 64.7125,
+      "duration_sec": 0.525
+    },
+    {
+      "text": "must",
+      "start_sec": 64.7125,
+      "end_sec": 65.025,
+      "duration_sec": 0.3125
+    },
+    {
+      "text": "deploy",
+      "start_sec": 65.025,
+      "end_sec": 65.67500000000001,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "without",
+      "start_sec": 65.7375,
+      "end_sec": 66.14999999999999,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "breaking",
+      "start_sec": 66.15,
+      "end_sec": 66.5625,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "near-real-time",
+      "start_sec": 66.5625,
+      "end_sec": 67.3125,
+      "duration_sec": 0.75
+    },
+    {
+      "text": "checkout",
+      "start_sec": 67.3125,
+      "end_sec": 67.875,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": ".",
+      "start_sec": 67.875,
+      "end_sec": 67.9625,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Diagnostics",
+      "start_sec": 68.2125,
+      "end_sec": 69.1875,
+      "duration_sec": 0.975
+    },
+    {
+      "text": "should",
+      "start_sec": 69.275,
+      "end_sec": 69.525,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "avoid",
+      "start_sec": 69.525,
+      "end_sec": 69.875,
+      "duration_sec": 0.35
+    },
+    {
+      "text": "heavy",
+      "start_sec": 69.875,
+      "end_sec": 70.3375,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "instrumentation",
+      "start_sec": 70.3375,
+      "end_sec": 71.3125,
+      "duration_sec": 0.975
+    },
+    {
+      "text": "in",
+      "start_sec": 71.3625,
+      "end_sec": 71.52499999999999,
+      "duration_sec": 0.1625
+    },
+    {
+      "text": "production",
+      "start_sec": 71.525,
+      "end_sec": 72.0625,
+      "duration_sec": 0.5375
+    },
+    {
+      "text": "request",
+      "start_sec": 72.0625,
+      "end_sec": 72.5125,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "paths",
+      "start_sec": 72.5125,
+      "end_sec": 73.025,
+      "duration_sec": 0.5125
+    },
+    {
+      "text": ".",
+      "start_sec": 73.025,
+      "end_sec": 73.11250000000001,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "The",
+      "start_sec": 73.3625,
+      "end_sec": 73.5,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "solution",
+      "start_sec": 73.5,
+      "end_sec": 74.0625,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": "must",
+      "start_sec": 74.0625,
+      "end_sec": 74.3625,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "preserve",
+      "start_sec": 74.3625,
+      "end_sec": 74.8,
+      "duration_sec": 0.4375
+    },
+    {
+      "text": "the",
+      "start_sec": 74.8,
+      "end_sec": 74.9375,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "order",
+      "start_sec": 74.9375,
+      "end_sec": 75.225,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "confirmation",
+      "start_sec": 75.225,
+      "end_sec": 75.925,
+      "duration_sec": 0.7
+    },
+    {
+      "text": "SLA",
+      "start_sec": 75.95,
+      "end_sec": 76.5875,
+      "duration_sec": 0.6375
+    },
+    {
+      "text": ",",
+      "start_sec": 76.675,
+      "end_sec": 76.96249999999999,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "keeping",
+      "start_sec": 76.9625,
+      "end_sec": 77.35000000000001,
+      "duration_sec": 0.3875
+    },
+    {
+      "text": "response",
+      "start_sec": 77.35,
+      "end_sec": 77.85,
+      "duration_sec": 0.5
+    },
+    {
+      "text": "below",
+      "start_sec": 77.85,
+      "end_sec": 78.2875,
+      "duration_sec": 0.4375
+    },
+    {
+      "text": "one",
+      "start_sec": 78.3125,
+      "end_sec": 78.6375,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "second",
+      "start_sec": 78.6375,
+      "end_sec": 79.22500000000001,
+      "duration_sec": 0.5875
+    },
+    {
+      "text": ".",
+      "start_sec": 79.225,
+      "end_sec": 79.3125,
+      "duration_sec": 0.0875
+    }
+  ]
+}

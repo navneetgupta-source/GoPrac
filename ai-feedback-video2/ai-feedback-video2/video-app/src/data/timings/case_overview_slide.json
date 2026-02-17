@@ -1,0 +1,724 @@
+{
+  "slide_id": "case_overview",
+  "audio_file": "case_overview.mp3",
+  "total_duration_sec": 45.11,
+  "word_count": 115,
+  "words": [
+    {
+      "text": "So",
+      "start_sec": 0.05,
+      "end_sec": 0.337,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "here's",
+      "start_sec": 0.338,
+      "end_sec": 0.613,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "the",
+      "start_sec": 0.613,
+      "end_sec": 0.713,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "situation",
+      "start_sec": 0.713,
+      "end_sec": 1.5,
+      "duration_sec": 0.787
+    },
+    {
+      "text": "...",
+      "start_sec": 1.5,
+      "end_sec": 1.587,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "We've",
+      "start_sec": 1.837,
+      "end_sec": 2.062,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "got",
+      "start_sec": 2.062,
+      "end_sec": 2.3,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "an",
+      "start_sec": 2.3,
+      "end_sec": 2.462,
+      "duration_sec": 0.163
+    },
+    {
+      "text": "online",
+      "start_sec": 2.487,
+      "end_sec": 3.012,
+      "duration_sec": 0.525
+    },
+    {
+      "text": "retail",
+      "start_sec": 3.013,
+      "end_sec": 3.425,
+      "duration_sec": 0.412
+    },
+    {
+      "text": "platform",
+      "start_sec": 3.425,
+      "end_sec": 4.112,
+      "duration_sec": 0.688
+    },
+    {
+      "text": "where",
+      "start_sec": 4.225,
+      "end_sec": 4.387,
+      "duration_sec": 0.163
+    },
+    {
+      "text": "the",
+      "start_sec": 4.388,
+      "end_sec": 4.5,
+      "duration_sec": 0.113
+    },
+    {
+      "text": "checkout",
+      "start_sec": 4.5,
+      "end_sec": 4.95,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "system's",
+      "start_sec": 4.95,
+      "end_sec": 5.487,
+      "duration_sec": 0.537
+    },
+    {
+      "text": "throwing",
+      "start_sec": 5.487,
+      "end_sec": 5.875,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "errors",
+      "start_sec": 5.9,
+      "end_sec": 6.438,
+      "duration_sec": 0.537
+    },
+    {
+      "text": ".",
+      "start_sec": 6.438,
+      "end_sec": 6.525,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "When",
+      "start_sec": 6.775,
+      "end_sec": 6.988,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "promos",
+      "start_sec": 6.987,
+      "end_sec": 7.425,
+      "duration_sec": 0.438
+    },
+    {
+      "text": "fail",
+      "start_sec": 7.425,
+      "end_sec": 7.837,
+      "duration_sec": 0.412
+    },
+    {
+      "text": ",",
+      "start_sec": 7.925,
+      "end_sec": 8.137,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "totals",
+      "start_sec": 8.137,
+      "end_sec": 8.65,
+      "duration_sec": 0.512
+    },
+    {
+      "text": "are",
+      "start_sec": 8.688,
+      "end_sec": 8.875,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "mismatched",
+      "start_sec": 8.875,
+      "end_sec": 9.662,
+      "duration_sec": 0.787
+    },
+    {
+      "text": ".",
+      "start_sec": 9.662,
+      "end_sec": 9.75,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "The",
+      "start_sec": 10.0,
+      "end_sec": 10.188,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "CheckoutService",
+      "start_sec": 10.188,
+      "end_sec": 11.1,
+      "duration_sec": 0.912
+    },
+    {
+      "text": "fires",
+      "start_sec": 11.1,
+      "end_sec": 11.612,
+      "duration_sec": 0.512
+    },
+    {
+      "text": "off",
+      "start_sec": 11.637,
+      "end_sec": 11.862,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "a",
+      "start_sec": 11.863,
+      "end_sec": 11.938,
+      "duration_sec": 0.075
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 11.938,
+      "end_sec": 12.9,
+      "duration_sec": 0.963
+    },
+    {
+      "text": ",",
+      "start_sec": 12.988,
+      "end_sec": 13.288,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "but",
+      "start_sec": 13.287,
+      "end_sec": 13.463,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "our",
+      "start_sec": 13.463,
+      "end_sec": 13.6,
+      "duration_sec": 0.138
+    },
+    {
+      "text": "JSP",
+      "start_sec": 13.6,
+      "end_sec": 14.162,
+      "duration_sec": 0.562
+    },
+    {
+      "text": "summary",
+      "start_sec": 14.162,
+      "end_sec": 14.6,
+      "duration_sec": 0.438
+    },
+    {
+      "text": "sometimes",
+      "start_sec": 14.6,
+      "end_sec": 15.3,
+      "duration_sec": 0.7
+    },
+    {
+      "text": "redoes",
+      "start_sec": 15.363,
+      "end_sec": 15.9,
+      "duration_sec": 0.537
+    },
+    {
+      "text": "the",
+      "start_sec": 15.9,
+      "end_sec": 16.062,
+      "duration_sec": 0.163
+    },
+    {
+      "text": "displayTotal",
+      "start_sec": 16.062,
+      "end_sec": 16.85,
+      "duration_sec": 0.787
+    },
+    {
+      "text": ".",
+      "start_sec": 16.85,
+      "end_sec": 16.938,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "That's",
+      "start_sec": 17.188,
+      "end_sec": 17.575,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "breaking",
+      "start_sec": 17.575,
+      "end_sec": 18.025,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "trust",
+      "start_sec": 18.025,
+      "end_sec": 18.387,
+      "duration_sec": 0.362
+    },
+    {
+      "text": "with",
+      "start_sec": 18.413,
+      "end_sec": 18.613,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "customers",
+      "start_sec": 18.613,
+      "end_sec": 19.338,
+      "duration_sec": 0.725
+    },
+    {
+      "text": ".",
+      "start_sec": 19.337,
+      "end_sec": 19.425,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "And",
+      "start_sec": 19.675,
+      "end_sec": 20.062,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "this",
+      "start_sec": 20.075,
+      "end_sec": 20.387,
+      "duration_sec": 0.312
+    },
+    {
+      "text": "is",
+      "start_sec": 20.413,
+      "end_sec": 20.588,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "costing",
+      "start_sec": 20.587,
+      "end_sec": 21.012,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "them",
+      "start_sec": 21.012,
+      "end_sec": 21.25,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "actual",
+      "start_sec": 21.275,
+      "end_sec": 21.725,
+      "duration_sec": 0.45
+    },
+    {
+      "text": "money",
+      "start_sec": 21.725,
+      "end_sec": 22.175,
+      "duration_sec": 0.45
+    },
+    {
+      "text": ".",
+      "start_sec": 22.175,
+      "end_sec": 22.262,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Now",
+      "start_sec": 22.512,
+      "end_sec": 22.95,
+      "duration_sec": 0.438
+    },
+    {
+      "text": ",",
+      "start_sec": 23.038,
+      "end_sec": 23.213,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "we've",
+      "start_sec": 23.212,
+      "end_sec": 23.438,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "got",
+      "start_sec": 23.438,
+      "end_sec": 23.65,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "some",
+      "start_sec": 23.65,
+      "end_sec": 23.938,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "business",
+      "start_sec": 23.938,
+      "end_sec": 24.325,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "rules",
+      "start_sec": 24.325,
+      "end_sec": 24.712,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "that",
+      "start_sec": 24.837,
+      "end_sec": 25.087,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "say",
+      "start_sec": 25.087,
+      "end_sec": 25.325,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "no",
+      "start_sec": 25.325,
+      "end_sec": 25.575,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "recomputation",
+      "start_sec": 25.575,
+      "end_sec": 26.425,
+      "duration_sec": 0.85
+    },
+    {
+      "text": "of",
+      "start_sec": 26.425,
+      "end_sec": 26.55,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "totals",
+      "start_sec": 26.55,
+      "end_sec": 27.062,
+      "duration_sec": 0.512
+    },
+    {
+      "text": "in",
+      "start_sec": 27.075,
+      "end_sec": 27.287,
+      "duration_sec": 0.212
+    },
+    {
+      "text": "view-layer",
+      "start_sec": 27.288,
+      "end_sec": 27.65,
+      "duration_sec": 0.362
+    },
+    {
+      "text": "templates",
+      "start_sec": 27.65,
+      "end_sec": 28.287,
+      "duration_sec": 0.637
+    },
+    {
+      "text": ",",
+      "start_sec": 28.375,
+      "end_sec": 28.6,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "and",
+      "start_sec": 28.6,
+      "end_sec": 28.85,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "the",
+      "start_sec": 28.85,
+      "end_sec": 28.975,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "display",
+      "start_sec": 28.975,
+      "end_sec": 29.4,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "must",
+      "start_sec": 29.4,
+      "end_sec": 29.762,
+      "duration_sec": 0.362
+    },
+    {
+      "text": "match",
+      "start_sec": 29.762,
+      "end_sec": 30.225,
+      "duration_sec": 0.463
+    },
+    {
+      "text": "that",
+      "start_sec": 30.325,
+      "end_sec": 30.575,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "finalTotal",
+      "start_sec": 30.575,
+      "end_sec": 31.3,
+      "duration_sec": 0.725
+    },
+    {
+      "text": "verbatim",
+      "start_sec": 31.3,
+      "end_sec": 31.9,
+      "duration_sec": 0.6
+    },
+    {
+      "text": ".",
+      "start_sec": 31.9,
+      "end_sec": 31.987,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "We",
+      "start_sec": 32.237,
+      "end_sec": 32.362,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "need",
+      "start_sec": 32.362,
+      "end_sec": 32.625,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "to",
+      "start_sec": 32.625,
+      "end_sec": 32.75,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "ensure",
+      "start_sec": 32.75,
+      "end_sec": 33.188,
+      "duration_sec": 0.438
+    },
+    {
+      "text": "that",
+      "start_sec": 33.188,
+      "end_sec": 33.325,
+      "duration_sec": 0.138
+    },
+    {
+      "text": "our",
+      "start_sec": 33.325,
+      "end_sec": 33.413,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "hotfix",
+      "start_sec": 33.413,
+      "end_sec": 34.013,
+      "duration_sec": 0.6
+    },
+    {
+      "text": "is",
+      "start_sec": 34.038,
+      "end_sec": 34.163,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "swift",
+      "start_sec": 34.163,
+      "end_sec": 34.775,
+      "duration_sec": 0.613
+    },
+    {
+      "text": ",",
+      "start_sec": 34.862,
+      "end_sec": 35.1,
+      "duration_sec": 0.237
+    },
+    {
+      "text": "without",
+      "start_sec": 35.1,
+      "end_sec": 35.388,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "disrupting",
+      "start_sec": 35.388,
+      "end_sec": 36.038,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "the",
+      "start_sec": 36.05,
+      "end_sec": 36.15,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "near-real-time",
+      "start_sec": 36.15,
+      "end_sec": 36.962,
+      "duration_sec": 0.812
+    },
+    {
+      "text": "checkout",
+      "start_sec": 36.962,
+      "end_sec": 37.375,
+      "duration_sec": 0.412
+    },
+    {
+      "text": "experience",
+      "start_sec": 37.375,
+      "end_sec": 38.212,
+      "duration_sec": 0.838
+    },
+    {
+      "text": ".",
+      "start_sec": 38.212,
+      "end_sec": 38.3,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "The",
+      "start_sec": 38.55,
+      "end_sec": 38.737,
+      "duration_sec": 0.188
+    },
+    {
+      "text": "goal",
+      "start_sec": 38.737,
+      "end_sec": 39.112,
+      "duration_sec": 0.375
+    },
+    {
+      "text": "?",
+      "start_sec": 39.112,
+      "end_sec": 39.2,
+      "duration_sec": 0.087
+    },
+    {
+      "text": "Restore",
+      "start_sec": 39.45,
+      "end_sec": 39.95,
+      "duration_sec": 0.5
+    },
+    {
+      "text": "confidence",
+      "start_sec": 39.95,
+      "end_sec": 40.75,
+      "duration_sec": 0.8
+    },
+    {
+      "text": "and",
+      "start_sec": 40.85,
+      "end_sec": 41.113,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "keep",
+      "start_sec": 41.112,
+      "end_sec": 41.5,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "that",
+      "start_sec": 41.525,
+      "end_sec": 41.85,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "SLA",
+      "start_sec": 41.875,
+      "end_sec": 42.525,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "for",
+      "start_sec": 42.562,
+      "end_sec": 42.85,
+      "duration_sec": 0.287
+    },
+    {
+      "text": "order",
+      "start_sec": 42.85,
+      "end_sec": 43.113,
+      "duration_sec": 0.263
+    },
+    {
+      "text": "confirmation",
+      "start_sec": 43.112,
+      "end_sec": 43.825,
+      "duration_sec": 0.713
+    },
+    {
+      "text": "under",
+      "start_sec": 43.875,
+      "end_sec": 44.2,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "one",
+      "start_sec": 44.2,
+      "end_sec": 44.45,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "second",
+      "start_sec": 44.45,
+      "end_sec": 45.025,
+      "duration_sec": 0.575
+    },
+    {
+      "text": ".",
+      "start_sec": 45.025,
+      "end_sec": 45.112,
+      "duration_sec": 0.087
+    }
+  ],
+  "pause_markers": [
+    {
+      "position": 27,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 121,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 312,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 364,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 526,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 642,
+      "duration_sec": 1.5
+    }
+  ]
+}

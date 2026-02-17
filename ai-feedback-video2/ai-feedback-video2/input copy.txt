@@ -1,0 +1,114 @@
+{
+"slides": {
+"intro": {
+"visual": {
+"headline": "Checkout Total Integrity Debugging",
+"cta_text": "Let's Start Your Feedback"
+},
+"narration": "Hi Laukik, I am GoPrac's AI Coach. Let's walk through your feedback on the Checkout Total Integrity Debugging problem."
+},
+"case_overview": {
+"visual": {
+"problem_scenario": {
+"key_points": [
+"CheckoutService emits finalTotal for each order.",
+"JSP sometimes recomputes a separate displayTotal.",
+"Promo failures can leave stale discount values."
+]
+},
+"data": {
+"key_points": [
+"Payload includes baseTotal, discountAmount, finalTotal.",
+"CheckoutServlet calls PricingUtil and helper tags.",
+"Confirmation email binds to displayTotal value."
+]
+},
+"business_rules": {
+"key_points": [
+"Do not recompute totals in view-layer templates.",
+"Display must match CheckoutService.finalTotal exactly.",
+"Promo failure should clear stale discount values."
+]
+},
+"performance_constraints": {
+"key_points": [
+"Hotfix must not break near-real-time checkout.",
+"Keep diagnostics light in production paths.",
+"Order confirmation SLA must stay under one second."
+]
+}
+},
+"narration": {
+"problem_scenario": "What is the Problem Scenario? The service emits a finalTotal, but the JSP sometimes recomputes a separate displayTotal. This recomputation combined with promo failures can leave stale discounts and create mismatched totals. This matters because customers see different totals in the page and email, breaking trust.",
+"data": "Now let's understand the Data Simplified. The payload includes baseTotal, discountAmount, and finalTotal from CheckoutService. CheckoutServlet orchestrates calls and uses PricingUtil helper methods and custom tags. The confirmation email binds to displayTotal, so any view recompute can change what the customer receives.",
+"business_rules": "What are the Business Rules? The view layer must not recompute totals and should use the service finalTotal verbatim. The display must exactly match CheckoutService.finalTotal. Promo failures must clear stale discount values so totals stay correct.",
+"performance_constraints": "What are the Performance Constraints? The hotfix must deploy without breaking near-real-time checkout. Diagnostics should avoid heavy instrumentation in production request paths. The solution must preserve the order confirmation SLA, keeping response below one second."
+}
+},
+"q1_summary": {
+"visual": {
+"question_block": {
+"topic": "Trace Variable Flows",
+"question_text": "Trace the pricing total through CheckoutService, CheckoutServlet, helper tags, and JSP to pinpoint why the confirmation email and on-page summary diverge."
+},
+"feedback_summary_block": {
+"title": "YOUR APPROACH:",
+"points": [
+"You suspected the JSP and view layer as the mismatch source.",
+"You stopped short of tracing CheckoutServlet conditionals that overwrite totals.",
+"You did not check helper tag recomputations or cite the no-recompute rule."
+]
+},
+"score_block": {
+"score": 6.5,
+"score_text": "Below Industry Standards"
+}
+},
+"narration": {
+"question": "What is the Question asking? The question asks you to trace the pricing total from CheckoutService through CheckoutServlet, helper tags, and JSP to find why email and page totals differ. You had to find where the price difference is coming from.",
+"feedback": "Feedback Summary. You correctly suspected the view layer and JSP as a likely mismatch point. You missed tracing CheckoutServlet branches and helper tag recomputations that can overwrite displayTotal. So you started in the right direction, but did not complete the full tracing.",
+"score": "You scored 6.5 out of 10. You currently stand Below Industry Standards."
+}
+},
+"feedback_blocks": {
+"visual": {
+"what_went_right": [
+"You clearly pinpointed the mismatch region between CheckoutService and the JSP view layer.",
+"You noted that discountAmount remained stale after promo failures in some cases.",
+"You recognized that helper logic could recalculate totals incorrectly in the JSP."
+],
+"what_went_wrong": [
+"You skipped tracing CheckoutServlet branches that can overwrite displayTotal during request handling.",
+"You did not check PricingUtil or tag helpers for recomputing totals.",
+"You left out mentioning the no-recompute business rule explicitly in your notes."
+]
+},
+"narration": {
+"what_went_right": "Let's start with what you did right. First, you clearly pinpointed the mismatch region between CheckoutService and the JSP view layer. Second, you noted that discountAmount remained stale after promo failures in some cases. Third, you recognized that helper logic could recalculate totals incorrectly in the JSP. These are solid observations and show good initial focus.",
+"what_went_wrong": "Now let's see What went wrong. One, you skipped tracing CheckoutServlet branches that can overwrite displayTotal during request handling. Two, you did not check PricingUtil or tag helpers for recomputing totals. Three, you left out mentioning the no-recompute business rule explicitly in your notes. Lets break down the mistakes in next slide."
+}
+},
+"thinking_steps": {
+"visual": {
+"rows": [
+{
+"step": "Locate mismatch",
+"how_you_thought": "You identified the CheckoutService vs JSP mismatch, but you did not document intermediate overwrites.",
+"thinking_advice": "Trace finalTotal from service to JSP and ensure no recomputation."
+},
+{
+"step": "Validate rules",
+"how_you_thought": "You mentioned recomputation risk, but you did not cite the specific rule or helper tag.",
+"thinking_advice": "Confirm the no-recompute rule and test helper tags for compliance."
+},
+{
+"step": "Inspect fallbacks",
+"how_you_thought": "You raised the stale discount idea, but you skipped checking servlet-level fallbacks.",
+"thinking_advice": "Inspect servlet conditionals and stale discount state on promo failures."
+}
+]
+},
+"narration": "Lets analyze your thinking process step by step.\nStep one is Locate mismatch, where you should trace finalTotal from CheckoutService through CheckoutServlet to the JSP and confirm no recomputation happens. Step two is Validate rules, where you should restate the no recomputation rule and test helper tags for compliance. Step three is Inspect fallbacks, where you should check CheckoutServlet conditional overwrites and stale discount state when promos fail.\nNow lets see How You Thought.\nFor Locate mismatch, you identified the CheckoutService vs JSP mismatch, but you did not document intermediate overwrites. My advice is that you should trace finalTotal from service to JSP and ensure no recomputation.\nFor Validate rules, you mentioned recomputation risk, but you did not cite the specific rule or helper tag. My advice is that you should confirm the no-recompute rule and test helper tags for compliance.\nFor Inspect fallbacks, you raised the stale discount idea, but you skipped checking servlet-level fallbacks. My advice is that you should inspect servlet conditionals and stale discount state on promo failures.\nI would also advice you to go through the concepts of: Variable Tracing, Business Rule Validation, and Fallback Logic."
+}
+}
+}

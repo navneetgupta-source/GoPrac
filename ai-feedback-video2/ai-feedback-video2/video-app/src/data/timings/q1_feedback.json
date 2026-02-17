@@ -1,0 +1,750 @@
+{
+  "audio_file": "audio/q1_feedback.mp3",
+  "duration_sec": 49.2,
+  "words": [
+    {
+      "text": "Let's",
+      "start_sec": 0.05,
+      "end_sec": 0.3125,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "start",
+      "start_sec": 0.3125,
+      "end_sec": 0.6125,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "with",
+      "start_sec": 0.6125,
+      "end_sec": 0.775,
+      "duration_sec": 0.1625
+    },
+    {
+      "text": "what",
+      "start_sec": 0.775,
+      "end_sec": 1.05,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "you",
+      "start_sec": 1.05,
+      "end_sec": 1.1500000000000001,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "did",
+      "start_sec": 1.15,
+      "end_sec": 1.3499999999999999,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "right",
+      "start_sec": 1.35,
+      "end_sec": 1.7125000000000001,
+      "duration_sec": 0.3625
+    },
+    {
+      "text": ".",
+      "start_sec": 1.7125,
+      "end_sec": 1.7999999999999998,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "First",
+      "start_sec": 2.05,
+      "end_sec": 2.6125,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": ",",
+      "start_sec": 2.7,
+      "end_sec": 2.825,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "you",
+      "start_sec": 2.825,
+      "end_sec": 3.1,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "clearly",
+      "start_sec": 3.1,
+      "end_sec": 3.525,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "pinpointed",
+      "start_sec": 3.525,
+      "end_sec": 4.1625,
+      "duration_sec": 0.6375
+    },
+    {
+      "text": "the",
+      "start_sec": 4.1625,
+      "end_sec": 4.25,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "mismatch",
+      "start_sec": 4.25,
+      "end_sec": 4.825,
+      "duration_sec": 0.575
+    },
+    {
+      "text": "region",
+      "start_sec": 4.825,
+      "end_sec": 5.3,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "between",
+      "start_sec": 5.3,
+      "end_sec": 5.625,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "CheckoutService",
+      "start_sec": 5.625,
+      "end_sec": 6.675,
+      "duration_sec": 1.05
+    },
+    {
+      "text": "and",
+      "start_sec": 6.8,
+      "end_sec": 7.0125,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "the",
+      "start_sec": 7.0125,
+      "end_sec": 7.1125,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "JSP",
+      "start_sec": 7.1125,
+      "end_sec": 7.75,
+      "duration_sec": 0.6375
+    },
+    {
+      "text": "view",
+      "start_sec": 7.75,
+      "end_sec": 8.0125,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "layer",
+      "start_sec": 8.0125,
+      "end_sec": 8.399999999999999,
+      "duration_sec": 0.3875
+    },
+    {
+      "text": ".",
+      "start_sec": 8.4,
+      "end_sec": 8.4875,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Second",
+      "start_sec": 8.7375,
+      "end_sec": 9.3125,
+      "duration_sec": 0.575
+    },
+    {
+      "text": ",",
+      "start_sec": 9.4125,
+      "end_sec": 9.6,
+      "duration_sec": 0.1875
+    },
+    {
+      "text": "you",
+      "start_sec": 9.6,
+      "end_sec": 9.8125,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "noted",
+      "start_sec": 9.8125,
+      "end_sec": 10.3125,
+      "duration_sec": 0.5
+    },
+    {
+      "text": "that",
+      "start_sec": 10.3375,
+      "end_sec": 10.5625,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "discountAmount",
+      "start_sec": 10.5625,
+      "end_sec": 11.3625,
+      "duration_sec": 0.8
+    },
+    {
+      "text": "remained",
+      "start_sec": 11.4,
+      "end_sec": 11.875,
+      "duration_sec": 0.475
+    },
+    {
+      "text": "stale",
+      "start_sec": 11.875,
+      "end_sec": 12.2875,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "after",
+      "start_sec": 12.3375,
+      "end_sec": 12.637500000000001,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "promo",
+      "start_sec": 12.6375,
+      "end_sec": 13.0125,
+      "duration_sec": 0.375
+    },
+    {
+      "text": "failures",
+      "start_sec": 13.0125,
+      "end_sec": 13.575,
+      "duration_sec": 0.5625
+    },
+    {
+      "text": "in",
+      "start_sec": 13.6,
+      "end_sec": 13.775,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "some",
+      "start_sec": 13.775,
+      "end_sec": 14.05,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "cases",
+      "start_sec": 14.05,
+      "end_sec": 14.725000000000001,
+      "duration_sec": 0.675
+    },
+    {
+      "text": ".",
+      "start_sec": 14.725,
+      "end_sec": 14.8125,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Third",
+      "start_sec": 15.0625,
+      "end_sec": 15.4875,
+      "duration_sec": 0.425
+    },
+    {
+      "text": ",",
+      "start_sec": 15.5875,
+      "end_sec": 15.700000000000001,
+      "duration_sec": 0.1125
+    },
+    {
+      "text": "you",
+      "start_sec": 15.7,
+      "end_sec": 15.9375,
+      "duration_sec": 0.2375
+    },
+    {
+      "text": "recognized",
+      "start_sec": 15.9375,
+      "end_sec": 16.7125,
+      "duration_sec": 0.775
+    },
+    {
+      "text": "that",
+      "start_sec": 16.7375,
+      "end_sec": 16.975,
+      "duration_sec": 0.2375
+    },
+    {
+      "text": "helper",
+      "start_sec": 16.975,
+      "end_sec": 17.400000000000002,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "logic",
+      "start_sec": 17.4,
+      "end_sec": 18.037499999999998,
+      "duration_sec": 0.6375
+    },
+    {
+      "text": "could",
+      "start_sec": 18.1375,
+      "end_sec": 18.425,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "recalculate",
+      "start_sec": 18.425,
+      "end_sec": 19.1375,
+      "duration_sec": 0.7125
+    },
+    {
+      "text": "totals",
+      "start_sec": 19.15,
+      "end_sec": 19.674999999999997,
+      "duration_sec": 0.525
+    },
+    {
+      "text": "incorrectly",
+      "start_sec": 19.725,
+      "end_sec": 20.4375,
+      "duration_sec": 0.7125
+    },
+    {
+      "text": "in",
+      "start_sec": 20.4375,
+      "end_sec": 20.55,
+      "duration_sec": 0.1125
+    },
+    {
+      "text": "the",
+      "start_sec": 20.55,
+      "end_sec": 20.6625,
+      "duration_sec": 0.1125
+    },
+    {
+      "text": "JSP",
+      "start_sec": 20.6625,
+      "end_sec": 21.387500000000003,
+      "duration_sec": 0.725
+    },
+    {
+      "text": ".",
+      "start_sec": 21.3875,
+      "end_sec": 21.474999999999998,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "These",
+      "start_sec": 21.725,
+      "end_sec": 22.0625,
+      "duration_sec": 0.3375
+    },
+    {
+      "text": "are",
+      "start_sec": 22.0625,
+      "end_sec": 22.1625,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "solid",
+      "start_sec": 22.1625,
+      "end_sec": 22.5625,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "observations",
+      "start_sec": 22.5625,
+      "end_sec": 23.5125,
+      "duration_sec": 0.95
+    },
+    {
+      "text": "and",
+      "start_sec": 23.6375,
+      "end_sec": 23.9,
+      "duration_sec": 0.2625
+    },
+    {
+      "text": "show",
+      "start_sec": 23.9,
+      "end_sec": 24.299999999999997,
+      "duration_sec": 0.4
+    },
+    {
+      "text": "good",
+      "start_sec": 24.3,
+      "end_sec": 24.6,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "initial",
+      "start_sec": 24.625,
+      "end_sec": 25.05,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "focus",
+      "start_sec": 25.05,
+      "end_sec": 25.7375,
+      "duration_sec": 0.6875
+    },
+    {
+      "text": ".",
+      "start_sec": 25.7375,
+      "end_sec": 25.825,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Now",
+      "start_sec": 26.075,
+      "end_sec": 26.3625,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "let's",
+      "start_sec": 26.3625,
+      "end_sec": 26.587500000000002,
+      "duration_sec": 0.225
+    },
+    {
+      "text": "see",
+      "start_sec": 26.5875,
+      "end_sec": 26.974999999999998,
+      "duration_sec": 0.3875
+    },
+    {
+      "text": "What",
+      "start_sec": 27.0,
+      "end_sec": 27.325,
+      "duration_sec": 0.325
+    },
+    {
+      "text": "went",
+      "start_sec": 27.325,
+      "end_sec": 27.625,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "wrong",
+      "start_sec": 27.625,
+      "end_sec": 27.9875,
+      "duration_sec": 0.3625
+    },
+    {
+      "text": ".",
+      "start_sec": 27.9875,
+      "end_sec": 28.075,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "One",
+      "start_sec": 28.325,
+      "end_sec": 28.787499999999998,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": ",",
+      "start_sec": 28.875,
+      "end_sec": 28.95,
+      "duration_sec": 0.075
+    },
+    {
+      "text": "you",
+      "start_sec": 28.95,
+      "end_sec": 29.162499999999998,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "skipped",
+      "start_sec": 29.1625,
+      "end_sec": 29.6,
+      "duration_sec": 0.4375
+    },
+    {
+      "text": "tracing",
+      "start_sec": 29.6125,
+      "end_sec": 30.2375,
+      "duration_sec": 0.625
+    },
+    {
+      "text": "CheckoutServlet",
+      "start_sec": 30.2875,
+      "end_sec": 31.425,
+      "duration_sec": 1.1375
+    },
+    {
+      "text": "branches",
+      "start_sec": 31.425,
+      "end_sec": 32.1625,
+      "duration_sec": 0.7375
+    },
+    {
+      "text": "that",
+      "start_sec": 32.2875,
+      "end_sec": 32.5375,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "can",
+      "start_sec": 32.5375,
+      "end_sec": 32.75,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "overwrite",
+      "start_sec": 32.775,
+      "end_sec": 33.324999999999996,
+      "duration_sec": 0.55
+    },
+    {
+      "text": "displayTotal",
+      "start_sec": 33.325,
+      "end_sec": 34.112500000000004,
+      "duration_sec": 0.7875
+    },
+    {
+      "text": "during",
+      "start_sec": 34.175,
+      "end_sec": 34.5875,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": "request",
+      "start_sec": 34.5875,
+      "end_sec": 35.012499999999996,
+      "duration_sec": 0.425
+    },
+    {
+      "text": "handling",
+      "start_sec": 35.0125,
+      "end_sec": 35.425000000000004,
+      "duration_sec": 0.4125
+    },
+    {
+      "text": ".",
+      "start_sec": 35.425,
+      "end_sec": 35.512499999999996,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Two",
+      "start_sec": 35.7625,
+      "end_sec": 36.1625,
+      "duration_sec": 0.4
+    },
+    {
+      "text": ",",
+      "start_sec": 36.25,
+      "end_sec": 36.4,
+      "duration_sec": 0.15
+    },
+    {
+      "text": "you",
+      "start_sec": 36.4,
+      "end_sec": 36.574999999999996,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "did",
+      "start_sec": 36.575,
+      "end_sec": 36.712500000000006,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "not",
+      "start_sec": 36.7125,
+      "end_sec": 36.9125,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "check",
+      "start_sec": 36.9125,
+      "end_sec": 37.1875,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "PricingUtil",
+      "start_sec": 37.1875,
+      "end_sec": 38.025,
+      "duration_sec": 0.8375
+    },
+    {
+      "text": "or",
+      "start_sec": 38.0375,
+      "end_sec": 38.237500000000004,
+      "duration_sec": 0.2
+    },
+    {
+      "text": "tag",
+      "start_sec": 38.25,
+      "end_sec": 38.55,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "helpers",
+      "start_sec": 38.55,
+      "end_sec": 39.099999999999994,
+      "duration_sec": 0.55
+    },
+    {
+      "text": "for",
+      "start_sec": 39.2125,
+      "end_sec": 39.4625,
+      "duration_sec": 0.25
+    },
+    {
+      "text": "recomputing",
+      "start_sec": 39.4625,
+      "end_sec": 40.1125,
+      "duration_sec": 0.65
+    },
+    {
+      "text": "totals",
+      "start_sec": 40.1125,
+      "end_sec": 40.7375,
+      "duration_sec": 0.625
+    },
+    {
+      "text": ".",
+      "start_sec": 40.7375,
+      "end_sec": 40.824999999999996,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Three",
+      "start_sec": 41.075,
+      "end_sec": 41.5,
+      "duration_sec": 0.425
+    },
+    {
+      "text": ",",
+      "start_sec": 41.5875,
+      "end_sec": 41.762499999999996,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "you",
+      "start_sec": 41.7625,
+      "end_sec": 41.975,
+      "duration_sec": 0.2125
+    },
+    {
+      "text": "left",
+      "start_sec": 41.975,
+      "end_sec": 42.2625,
+      "duration_sec": 0.2875
+    },
+    {
+      "text": "out",
+      "start_sec": 42.2625,
+      "end_sec": 42.400000000000006,
+      "duration_sec": 0.1375
+    },
+    {
+      "text": "mentioning",
+      "start_sec": 42.4,
+      "end_sec": 42.9375,
+      "duration_sec": 0.5375
+    },
+    {
+      "text": "the",
+      "start_sec": 42.9375,
+      "end_sec": 43.0125,
+      "duration_sec": 0.075
+    },
+    {
+      "text": "no-recompute",
+      "start_sec": 43.0125,
+      "end_sec": 43.875,
+      "duration_sec": 0.8625
+    },
+    {
+      "text": "business",
+      "start_sec": 43.875,
+      "end_sec": 44.3375,
+      "duration_sec": 0.4625
+    },
+    {
+      "text": "rule",
+      "start_sec": 44.3375,
+      "end_sec": 44.637499999999996,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "explicitly",
+      "start_sec": 44.6625,
+      "end_sec": 45.550000000000004,
+      "duration_sec": 0.8875
+    },
+    {
+      "text": "in",
+      "start_sec": 45.5625,
+      "end_sec": 45.6625,
+      "duration_sec": 0.1
+    },
+    {
+      "text": "your",
+      "start_sec": 45.6625,
+      "end_sec": 45.7875,
+      "duration_sec": 0.125
+    },
+    {
+      "text": "notes",
+      "start_sec": 45.7875,
+      "end_sec": 46.2875,
+      "duration_sec": 0.5
+    },
+    {
+      "text": ".",
+      "start_sec": 46.2875,
+      "end_sec": 46.375,
+      "duration_sec": 0.0875
+    },
+    {
+      "text": "Lets",
+      "start_sec": 46.625,
+      "end_sec": 46.925,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "break",
+      "start_sec": 46.925,
+      "end_sec": 47.224999999999994,
+      "duration_sec": 0.3
+    },
+    {
+      "text": "down",
+      "start_sec": 47.225,
+      "end_sec": 47.4625,
+      "duration_sec": 0.2375
+    },
+    {
+      "text": "the",
+      "start_sec": 47.4625,
+      "end_sec": 47.5375,
+      "duration_sec": 0.075
+    },
+    {
+      "text": "mistakes",
+      "start_sec": 47.5375,
+      "end_sec": 48.15,
+      "duration_sec": 0.6125
+    },
+    {
+      "text": "in",
+      "start_sec": 48.175,
+      "end_sec": 48.349999999999994,
+      "duration_sec": 0.175
+    },
+    {
+      "text": "next",
+      "start_sec": 48.35,
+      "end_sec": 48.625,
+      "duration_sec": 0.275
+    },
+    {
+      "text": "slide",
+      "start_sec": 48.625,
+      "end_sec": 49.1125,
+      "duration_sec": 0.4875
+    },
+    {
+      "text": ".",
+      "start_sec": 49.1125,
+      "end_sec": 49.199999999999996,
+      "duration_sec": 0.0875
+    }
+  ]
+}

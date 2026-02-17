@@ -1,0 +1,568 @@
+{
+  "slide_id": "q1_summary",
+  "audio_file": "q1_summary.mp3",
+  "total_duration_sec": 31.78,
+  "word_count": 89,
+  "words": [
+    {
+      "text": "Alright",
+      "start_sec": 0.049,
+      "end_sec": 0.607,
+      "duration_sec": 0.558
+    },
+    {
+      "text": ",",
+      "start_sec": 0.692,
+      "end_sec": 0.922,
+      "duration_sec": 0.231
+    },
+    {
+      "text": "let's",
+      "start_sec": 0.922,
+      "end_sec": 1.238,
+      "duration_sec": 0.316
+    },
+    {
+      "text": "talk",
+      "start_sec": 1.238,
+      "end_sec": 1.456,
+      "duration_sec": 0.218
+    },
+    {
+      "text": "about",
+      "start_sec": 1.456,
+      "end_sec": 1.711,
+      "duration_sec": 0.255
+    },
+    {
+      "text": "Question",
+      "start_sec": 1.711,
+      "end_sec": 2.148,
+      "duration_sec": 0.437
+    },
+    {
+      "text": "1",
+      "start_sec": 2.148,
+      "end_sec": 2.5,
+      "duration_sec": 0.352
+    },
+    {
+      "text": ":",
+      "start_sec": 2.585,
+      "end_sec": 2.767,
+      "duration_sec": 0.182
+    },
+    {
+      "text": "Trace",
+      "start_sec": 2.767,
+      "end_sec": 3.095,
+      "duration_sec": 0.328
+    },
+    {
+      "text": "Variable",
+      "start_sec": 3.095,
+      "end_sec": 3.604,
+      "duration_sec": 0.51
+    },
+    {
+      "text": "Flows",
+      "start_sec": 3.604,
+      "end_sec": 4.187,
+      "duration_sec": 0.583
+    },
+    {
+      "text": ".",
+      "start_sec": 4.187,
+      "end_sec": 4.272,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "You",
+      "start_sec": 4.515,
+      "end_sec": 4.672,
+      "duration_sec": 0.158
+    },
+    {
+      "text": "were",
+      "start_sec": 4.672,
+      "end_sec": 4.794,
+      "duration_sec": 0.121
+    },
+    {
+      "text": "asked",
+      "start_sec": 4.794,
+      "end_sec": 5.036,
+      "duration_sec": 0.243
+    },
+    {
+      "text": "to",
+      "start_sec": 5.036,
+      "end_sec": 5.133,
+      "duration_sec": 0.097
+    },
+    {
+      "text": "pinpoint",
+      "start_sec": 5.133,
+      "end_sec": 5.74,
+      "duration_sec": 0.607
+    },
+    {
+      "text": "why",
+      "start_sec": 5.789,
+      "end_sec": 6.007,
+      "duration_sec": 0.218
+    },
+    {
+      "text": "the",
+      "start_sec": 6.007,
+      "end_sec": 6.104,
+      "duration_sec": 0.097
+    },
+    {
+      "text": "confirmation",
+      "start_sec": 6.104,
+      "end_sec": 6.784,
+      "duration_sec": 0.68
+    },
+    {
+      "text": "email",
+      "start_sec": 6.808,
+      "end_sec": 7.379,
+      "duration_sec": 0.57
+    },
+    {
+      "text": "and",
+      "start_sec": 7.415,
+      "end_sec": 7.646,
+      "duration_sec": 0.231
+    },
+    {
+      "text": "on-page",
+      "start_sec": 7.67,
+      "end_sec": 8.277,
+      "duration_sec": 0.607
+    },
+    {
+      "text": "summary",
+      "start_sec": 8.277,
+      "end_sec": 8.677,
+      "duration_sec": 0.401
+    },
+    {
+      "text": "diverge",
+      "start_sec": 8.677,
+      "end_sec": 9.308,
+      "duration_sec": 0.631
+    },
+    {
+      "text": ".",
+      "start_sec": 9.308,
+      "end_sec": 9.393,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "So",
+      "start_sec": 9.636,
+      "end_sec": 9.842,
+      "duration_sec": 0.206
+    },
+    {
+      "text": "first",
+      "start_sec": 9.842,
+      "end_sec": 10.194,
+      "duration_sec": 0.352
+    },
+    {
+      "text": "off",
+      "start_sec": 10.194,
+      "end_sec": 10.57,
+      "duration_sec": 0.376
+    },
+    {
+      "text": "- you",
+      "start_sec": 10.655,
+      "end_sec": 10.813,
+      "duration_sec": 0.158
+    },
+    {
+      "text": "got",
+      "start_sec": 10.813,
+      "end_sec": 10.995,
+      "duration_sec": 0.182
+    },
+    {
+      "text": "some",
+      "start_sec": 10.995,
+      "end_sec": 11.262,
+      "duration_sec": 0.267
+    },
+    {
+      "text": "things",
+      "start_sec": 11.262,
+      "end_sec": 11.517,
+      "duration_sec": 0.255
+    },
+    {
+      "text": "right",
+      "start_sec": 11.517,
+      "end_sec": 11.723,
+      "duration_sec": 0.206
+    },
+    {
+      "text": "here",
+      "start_sec": 11.723,
+      "end_sec": 12.015,
+      "duration_sec": 0.291
+    },
+    {
+      "text": ".",
+      "start_sec": 12.015,
+      "end_sec": 12.099,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "You",
+      "start_sec": 12.342,
+      "end_sec": 12.573,
+      "duration_sec": 0.231
+    },
+    {
+      "text": "correctly",
+      "start_sec": 12.573,
+      "end_sec": 13.058,
+      "duration_sec": 0.485
+    },
+    {
+      "text": "suspected",
+      "start_sec": 13.058,
+      "end_sec": 13.629,
+      "duration_sec": 0.57
+    },
+    {
+      "text": "the",
+      "start_sec": 13.629,
+      "end_sec": 13.75,
+      "duration_sec": 0.121
+    },
+    {
+      "text": "JSP",
+      "start_sec": 13.75,
+      "end_sec": 14.381,
+      "duration_sec": 0.631
+    },
+    {
+      "text": "/view",
+      "start_sec": 14.381,
+      "end_sec": 14.648,
+      "duration_sec": 0.267
+    },
+    {
+      "text": "layer",
+      "start_sec": 14.648,
+      "end_sec": 15.121,
+      "duration_sec": 0.473
+    },
+    {
+      "text": "as",
+      "start_sec": 15.158,
+      "end_sec": 15.316,
+      "duration_sec": 0.158
+    },
+    {
+      "text": "a",
+      "start_sec": 15.316,
+      "end_sec": 15.376,
+      "duration_sec": 0.061
+    },
+    {
+      "text": "potential",
+      "start_sec": 15.376,
+      "end_sec": 15.813,
+      "duration_sec": 0.437
+    },
+    {
+      "text": "issue",
+      "start_sec": 15.813,
+      "end_sec": 16.238,
+      "duration_sec": 0.425
+    },
+    {
+      "text": ".",
+      "start_sec": 16.238,
+      "end_sec": 16.323,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "But",
+      "start_sec": 16.566,
+      "end_sec": 16.808,
+      "duration_sec": 0.243
+    },
+    {
+      "text": "here's",
+      "start_sec": 16.808,
+      "end_sec": 17.087,
+      "duration_sec": 0.279
+    },
+    {
+      "text": "where",
+      "start_sec": 17.087,
+      "end_sec": 17.282,
+      "duration_sec": 0.194
+    },
+    {
+      "text": "things",
+      "start_sec": 17.282,
+      "end_sec": 17.549,
+      "duration_sec": 0.267
+    },
+    {
+      "text": "got",
+      "start_sec": 17.549,
+      "end_sec": 17.779,
+      "duration_sec": 0.231
+    },
+    {
+      "text": "tricky",
+      "start_sec": 17.779,
+      "end_sec": 18.24,
+      "duration_sec": 0.461
+    },
+    {
+      "text": "...",
+      "start_sec": 18.24,
+      "end_sec": 18.325,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "You",
+      "start_sec": 18.568,
+      "end_sec": 18.738,
+      "duration_sec": 0.17
+    },
+    {
+      "text": "stopped",
+      "start_sec": 18.738,
+      "end_sec": 19.09,
+      "duration_sec": 0.352
+    },
+    {
+      "text": "short",
+      "start_sec": 19.09,
+      "end_sec": 19.49,
+      "duration_sec": 0.401
+    },
+    {
+      "text": "of",
+      "start_sec": 19.515,
+      "end_sec": 19.648,
+      "duration_sec": 0.134
+    },
+    {
+      "text": "tracing",
+      "start_sec": 19.648,
+      "end_sec": 20.121,
+      "duration_sec": 0.473
+    },
+    {
+      "text": "the",
+      "start_sec": 20.121,
+      "end_sec": 20.255,
+      "duration_sec": 0.134
+    },
+    {
+      "text": "CheckoutServlet",
+      "start_sec": 20.255,
+      "end_sec": 21.299,
+      "duration_sec": 1.044
+    },
+    {
+      "text": "conditionals",
+      "start_sec": 21.299,
+      "end_sec": 22.027,
+      "duration_sec": 0.728
+    },
+    {
+      "text": "and",
+      "start_sec": 22.124,
+      "end_sec": 22.306,
+      "duration_sec": 0.182
+    },
+    {
+      "text": "the",
+      "start_sec": 22.306,
+      "end_sec": 22.379,
+      "duration_sec": 0.073
+    },
+    {
+      "text": "helper",
+      "start_sec": 22.379,
+      "end_sec": 22.767,
+      "duration_sec": 0.388
+    },
+    {
+      "text": "tag",
+      "start_sec": 22.767,
+      "end_sec": 23.095,
+      "duration_sec": 0.328
+    },
+    {
+      "text": "recomputations",
+      "start_sec": 23.095,
+      "end_sec": 24.102,
+      "duration_sec": 1.007
+    },
+    {
+      "text": ",",
+      "start_sec": 24.187,
+      "end_sec": 24.43,
+      "duration_sec": 0.243
+    },
+    {
+      "text": "which",
+      "start_sec": 24.43,
+      "end_sec": 24.612,
+      "duration_sec": 0.182
+    },
+    {
+      "text": "violate",
+      "start_sec": 24.612,
+      "end_sec": 25.17,
+      "duration_sec": 0.558
+    },
+    {
+      "text": "the",
+      "start_sec": 25.17,
+      "end_sec": 25.352,
+      "duration_sec": 0.182
+    },
+    {
+      "text": "'no",
+      "start_sec": 25.437,
+      "end_sec": 25.789,
+      "duration_sec": 0.352
+    },
+    {
+      "text": "recompute",
+      "start_sec": 25.789,
+      "end_sec": 26.468,
+      "duration_sec": 0.68
+    },
+    {
+      "text": "' rule",
+      "start_sec": 26.529,
+      "end_sec": 26.942,
+      "duration_sec": 0.413
+    },
+    {
+      "text": ".",
+      "start_sec": 26.942,
+      "end_sec": 27.027,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "For",
+      "start_sec": 27.269,
+      "end_sec": 27.488,
+      "duration_sec": 0.218
+    },
+    {
+      "text": "this",
+      "start_sec": 27.488,
+      "end_sec": 27.694,
+      "duration_sec": 0.206
+    },
+    {
+      "text": "one",
+      "start_sec": 27.694,
+      "end_sec": 28.07,
+      "duration_sec": 0.376
+    },
+    {
+      "text": ",",
+      "start_sec": 28.155,
+      "end_sec": 28.289,
+      "duration_sec": 0.134
+    },
+    {
+      "text": "you",
+      "start_sec": 28.289,
+      "end_sec": 28.495,
+      "duration_sec": 0.206
+    },
+    {
+      "text": "scored",
+      "start_sec": 28.495,
+      "end_sec": 28.932,
+      "duration_sec": 0.437
+    },
+    {
+      "text": "6.5",
+      "start_sec": 29.041,
+      "end_sec": 30.024,
+      "duration_sec": 0.983
+    },
+    {
+      "text": "out",
+      "start_sec": 30.024,
+      "end_sec": 30.17,
+      "duration_sec": 0.146
+    },
+    {
+      "text": "of",
+      "start_sec": 30.17,
+      "end_sec": 30.267,
+      "duration_sec": 0.097
+    },
+    {
+      "text": "10",
+      "start_sec": 30.267,
+      "end_sec": 30.655,
+      "duration_sec": 0.388
+    },
+    {
+      "text": ".",
+      "start_sec": 30.655,
+      "end_sec": 30.74,
+      "duration_sec": 0.085
+    },
+    {
+      "text": "Average",
+      "start_sec": 30.983,
+      "end_sec": 31.699,
+      "duration_sec": 0.716
+    },
+    {
+      "text": ".",
+      "start_sec": 31.699,
+      "end_sec": 31.784,
+      "duration_sec": 0.085
+    }
+  ],
+  "pause_markers": [
+    {
+      "position": 60,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 156,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 216,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 294,
+      "duration_sec": 1.5
+    },
+    {
+      "position": 345,
+      "duration_sec": 1.0
+    },
+    {
+      "position": 494,
+      "duration_sec": 1.5
+    }
+  ]
+}
